@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>*Yu Tong Tiffany Ling*</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 body{
     text-align:center;
@@ -66,6 +67,40 @@ li a:hover {
   background-color: #697060;
   color:#d1d1dc;
 }
+.dropbtn {
+  background-color: #94766f;
+  color: #baab85;
+  font-size: 20px;
+  font-family:"futura PT";
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #d1d1dc;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #697060;}
 
 </style>
 </head>
@@ -84,11 +119,22 @@ li a:hover {
 	<br>
 	<br>
 	<p class="s">SPRING 2019 . .</>
+
 	<ul>
   		<li><a class="button" href="#home">H O M E . .</a></li>
   		<li><a class="button" href="#about">A B O U T . .</a></li>
-  		<li><a class="button" href="Studio.html">S T U D I O . .</a></li>
-  		<li><a class="button" href="Lab.html">L A B . .</a></li>
+		<div class="dropdown">
+  			<button class="dropbtn">S T U D I O . .</button>
+  			<div class="dropdown-content">
+    			<a href="project1/index.html">D i a l o g u e</a>
+ 	 		</div>
+		</div>
+		<div class="dropdown">
+  			<button class="dropbtn">L A B . .</button>
+  			<div class="dropdown-content">
+    			<a href="html-quiz/index.html">HTML Q u i z</a>
+ 	 		</div>
+		</div>
   		<li><a class="button" href="#portfolio">P O R T F O L I O . .</a></li>
   		<li><a class="button" href="#contact">C O N T A C T . .</a></li>
 	</ul></p>
