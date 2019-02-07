@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>*Yu Tong Tiffany Ling*</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 body{
     text-align:center;
@@ -27,12 +27,6 @@ body{
 	margin:20;
 	color:#55544e;
 }
-.button{
-	text-align:left;
-	font-size:20px;
-	font-family:"futura PT";
-	color:#baab85;
-}
 .info{
 	text-align:left;
 	font-size:20px;
@@ -40,68 +34,65 @@ body{
 	margin:20;
 	color:#827a65;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #94766f;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+.navbar {
+ 	overflow: hidden;
+ 	background-color: #94766f;
+	font-family:"futura PT";
 }
-
-li {
+.navbar a {
   float: left;
-}
-
-li a {
-  display: block;
-  color: #d1d1dc;
+  font-size: 20px;
+  color: white;
   text-align: center;
   padding: 15px 30px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #697060;
-  color:#d1d1dc;
-}
-.dropbtn {
-  background-color: #94766f;
-  color: #baab85;
-  font-size: 20px;
-  font-family:"futura PT";
-  border: none;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 15px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #697060;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #d1d1dc;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
+  float: none;
   color: black;
   padding: 12px 16px;
-  text-decoration: none;
+  font-family:;
   display: block;
+  text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #d1d1dc;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: #697060;}
-
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 </head>
 
@@ -118,25 +109,33 @@ li a:hover {
 	<br>
 	<br>
 	<br>
-	<p class="s">SPRING 2019 . .</>
+	<p class="s">SPRING 2019 . .</p>
 
-	<ul>
-  		<li><a class="button" href="#home">H O M E . .</a></li>
-  		<li><a class="button" href="#about">A B O U T . .</a></li>
-		<div class="dropdown">
-  			<button class="dropbtn">S T U D I O . .</button>
-  			<div class="dropdown-content">
-    			<a href="project1/index.html">D i a l o g u e</a>
- 	 		</div>
-		</div>
-		<div class="dropdown">
-  			<button class="dropbtn">L A B . .</button>
-  			<div class="dropdown-content">
-    			<a href="html-quiz/index.html">HTML Q u i z</a>
- 	 		</div>
-		</div>
-  		<li><a class="button" href="#portfolio">P O R T F O L I O . .</a></li>
-  		<li><a class="button" href="#contact">C O N T A C T . .</a></li>
+<div class="navbar">
+  <a href="#home">H O M E</a>
+  <a href="#about">A B O U T</a>
+  <div class="dropdown">
+    <button class="dropbtn">S T U D I O 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="project1/index.html">D i a l o g u e</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">L A B 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="html-quiz/index.html">Html   Quiz</a>
+      <a href="layers/index.html">L a y e r s</a>
+    </div>
+  </div>
+    <a href="#home">P O R T F O L I O</a>
+  <a href="#about">C O N T A C T</a>
+</div>
+  	
+  		
 	</ul></p>
 	<br>
 	<br>
