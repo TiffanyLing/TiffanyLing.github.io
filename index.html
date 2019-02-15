@@ -1,160 +1,309 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>*Yu Tong Tiffany Ling*</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
+  <title>Dialogue</title>
+<style>
 
   @import url("https://use.typekit.net/ljd8xcw.css");
+  @import url("https://use.typekit.net/ljd8xcw.css");
+  @import url("https://use.typekit.net/ljd8xcw.css");
+  @import url("https://use.typekit.net/ljd8xcw.css");
 
-body{
-    text-align:center;
-    background-color: #8e96ae;
-    }
+html,body{
+  height:100%;
+  transition: background-color .5s;
+}
+
 #grad1 {
-	size:100%;
-  background-color: #8e96ae; 
-  background-image: linear-gradient(#8e96ae, #4a5977);
+  height: 100%;
+  background-color: #000033; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#000033, #4d0000); /* Standard syntax (must be last) */
 }
-.s{
-	text-align:left;
-	font-size:20px;
-	font-family:futura-pt, sans-serif;
-	margin:20;
-	color:#c2aaa2;
+mark{
+  background-color:#e2afb5;
+  color:black;
+  height:30px;
+  width:;
 }
-.name{
-	text-align:left;
-	font-size:80px;
-	font-family:futura-pt, sans-serif;
-	margin:20;
-	color:#55544e;
-}
-.info{
-	text-align:left;
-	font-size:20px;
-	font-family:"Andale Mono";
-	margin:20;
-	color:#827a65;
-}
-.navbar {
- 	overflow: hidden;
- 	background-color: #94766f;
-	font-family:futura-pt, sans-serif;
-}
-.navbar a {
-  float: left;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  padding: 15px 30px;
-  text-decoration: none;
-}
+.j1 {
+  padding-left:40px;
+  font-size: 50px;
+  text-align:left;
+  color:white;
+    font-family: prohibition, sans-serif;
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+;
 
-.dropdown .dropbtn {
-  font-size: 20px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 15px 30px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
 }
+.j2 {
+  padding-left:40px;
+  font-size:80px;
+  text-align:left;
+  color:white;
+    font-family: prohibition, sans-serif;
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #697060;
+
 }
+.j3 {
+  padding-left:40px;
+  font-size:100px;
+  text-align:left;
+  color:#DD5A59;
+    font-family: prohibition, sans-serif;
+}
+.j4 {
+  padding-left:40px;
+  font-size:120px;
+  text-align:left;
+  color:red;
+    font-family: prohibition, sans-serif;
 
-.dropdown-content {
-  display: none;
+    text-shadow: 5px 5px black;
+}
+.j5fbi {
+  padding-left:40px;
+  font-size:150px;
+  text-align:left;
+  color:white;
+    font-family: prohibition, sans-serif;
+    text-shadow: 5px 5px red;
+
+}
+.j2ol {
+  padding-left:40px;
+  font-size:80px;
+  text-align:left;
+  color:white;
+    font-family: prohibition, sans-serif;
+    top:1000px;
+    left:30px;
+    z-index:10;
+}
+.s1{
+  padding-right:40px;
+  text-align:right;
+    font-family: walnut, sans-serif;
+    color:#853e44;
+    font-size:40px;
+}
+.s2{
+  padding-right:40px;
+  text-align:right;
+  font-family: walnut, sans-serif;
+  color:#853e44;
+    font-size:70px;
+}
+.s3{
+  padding-right:40px;
+  text-align:right;
+  font-family: walnut, sans-serif;
+  color:#853e44;
+    font-size:100px;
+}
+.s3s{
+  padding-right:40px;
+  text-align:right;
+  font-family: walnut, sans-serif;
+  color:#853e44;
+    font-size:140px;
+    text-shadow: 5px 5px white;
+}
+.s4{
+  padding-right:40px;
+  text-align:right;
+  font-family: walnut, sans-serif;
+  color:#853e44;
+    font-size:58px;
+}
+.n{
   position: absolute;
-  background-color: #d1d1dc;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  left:20px;
+  top:20px;
+  z-index: 10;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
   z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #55544e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: #94766f;
+  font-family:futura-pt, sans-serif;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  font-family:;
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #697060;
   display: block;
-  text-align: left;
+  transition: 0.3s;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+.sidenav a:hover {
+  color: white;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:#55544e;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.movie{
+  font-family: futura-pt, sans-serif;
+  font-size: 20px;
+  padding-left: 40px;
+}
+.n{
+  position: relative;
+    color: white;
+    font-size:30px;
+    opacity:0.2;
+    z-index: -1;
+}
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color: red;  }
+    100%{   color: red;    }
 }
 </style>
 </head>
 
 <body>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="name">Yu Tong Tiffany LING</div>
-<div id="grad1">		
-	<br>
-	<br>
-	<br>
-	<br>
-	<p class="s">SPRING 2019 . .</p>
 
-<div class="navbar">
-  <a href="#home">H O M E</a>
-  <a href="#about">A B O U T</a>
-  <div class="dropdown">
-    <button class="dropbtn">S T U D I O 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="project1/index.html">D i a l o g u e</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">L A B 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="html-quiz/index.html">Html   Quiz</a>
-      <a href="layers/index.html">L a y e r s</a>
-      <a href="music/index.html">R e m i x</a>
-    </div>
+
+  <span style="font-size:30px;cursor:pointer;color:#55544e;font-family:futura-pt, sans-serif;padding: 20px; position: fixed;" onclick="openNav()">&#9776; M E N U</span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../index.html">H O M E</a>
+      <a href="#">A B O U T</a>
+      <a href="#">S T U D I O</a>
+      <a href="#">L A B</a>
+      <a href="#">P O R T F O L I O</a>
+      <a href="../contact.html">C O N T A C T</a>
   </div>
-    <a href="#home">P O R T F O L I O</a>
-  <a href="contact.html">C O N T A C T</a>
-</div>
-  	
-  		
-	</ul></p>
-	<br>
-	<br>
-	<br>
-	<br><div class="info">. </div>
-	<br><div class="info">. .</div>
-	<br><div class="info">. . .</div>
-	<div class="info">Produced by Yu Tong Tiffany Ling</div>
-	<div class="info" id="address-home">Hong Kong.. HK..</div>
-	<p class="info" id="email">ttiffanyyllingg@gmail.com</p>
-	<br>
-	<br>
-	<br>
- </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div id="main"><div id="grad1">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="s1">Jorrrrr r r ... </div>
+    <div class="s1">It's fucking Good right?</div>
+    <div class="s1"><strong>Fuuuck up!!!</strong></div>
+    <br>
+    <br>
+    <br>
+    <div class="j1">Get off the phone ...</div>
+    <br>
+    <br>
+    <br>
+    <p class="s1">* Laugh *</p>
+    <br>
+    <br>
+        <p class="n">What the fuck Jordan? Your daughter is here!!</p>
+    <br>
+    <div class="j2">GET OFF THE PHONE ! ! ! !</div>
+    <div class="j5fbi">THE FBI ! ! ! ! !</div>
+    <br>
+    <br>
+    <br>
+    <div class="s3s">Heyyyy!!</div>
+    <div class="s2">I'm on my phone!!</div>
+    <br>
+    <br>
+    <br>
+    <p class="j2ol">GET OFF THAT FUCKING PHONE !!!</p>
+    <br>
+    <br>
+  
+    <br>
+    <div class="s3">ow!!</div>
+    <div class="s3s">I'm on the phone!</div>
+    <div class="s4">ON THE PHONE!!!!</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="j1">I know what you did !</div>
+    <div class="j2">You piece of shit !!!</div>
+    <br>
+    <br>
+    <p class="s1">... </p>
+    <div class="s1">... What ?</div>
+    <div class="s3">W H A T ???</div>
+    <br>
+    <br>
+    <div class="j2">BRAD !!</div>
+    <div class="j1">HUH !!</div>
+    <div class="j4"><strong>BRAD !!</strong></div>
+    <p class="j3"><strong>YOU FUCKING COCKSUCKER !!!</strong></p>
+    <br>
+    <div class="j1">What did you do</div>
+    <div class="j1">You piece of shit...</div>
+    <div class="j1">Fuck you</div>
+    <p class="j4"><strong><span class="blinking"> I WANNA FUCKING KILL YOU !!!!!</span></strong></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
+  </div></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p class="movie"> WATCH THIS MOVIE <strong><a href="https://www.youtube.com/watch?v=PlSjPfpmhIU&t=5261s"> The Wolf of Wall Street"</a></strong> 2:03:46 - 2:05:05</p>
+  <br>
+  <!-- <iframe padding-left: 40px width="560" height="315" src="https://www.youtube.com/embed/PlSjPfpmhIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+}
 
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 </body>
 </html>

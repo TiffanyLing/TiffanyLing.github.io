@@ -7,7 +7,6 @@
   @import url("https://use.typekit.net/ljd8xcw.css");
   @import url("https://use.typekit.net/ljd8xcw.css");
   @import url("https://use.typekit.net/ljd8xcw.css");
-  @import url("https://use.typekit.net/ljd8xcw.css");
 
 html,body{
 	height:100%;
@@ -133,7 +132,7 @@ mark{
   transition: 0.5s;
   padding-top: 60px;
  	background-color: #94766f;
-	font-family:futura-pt, sans-serif;
+	font-family:"futura PT";
 }
 
 .sidenav a {
@@ -168,18 +167,27 @@ mark{
   .sidenav a {font-size: 18px;}
 }
 .movie{
-	font-family: futura-pt, sans-serif;
+	font-family: "futura PT";
 	font-size: 20px;
 	padding-left: 40px;
 }
-
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:red;  }
+    100%{   color: red }
+}
 </style>
 </head>
 
 <body>
 
 
-	<span style="font-size:30px;cursor:pointer;color:#55544e;font-family:futura-pt, sans-serif;padding: 20px; position: fixed;" onclick="openNav()">&#9776; M E N U</span>
+	<span style="font-size:30px;cursor:pointer;color:#55544e;font-family:futura PT;padding: 20px; position: fixed;" onclick="openNav()">&#9776; M E N U</span>
 		<div id="mySidenav" class="sidenav">
   		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   		<a href="../index.html">H O M E</a>
@@ -255,7 +263,7 @@ mark{
 		<div class="j1">What did you do</div>
 		<div class="j1">You piece of shit...</div>
 		<div class="j1">Fuck you</div>
-		<p class="j4"><strong>I WANNA FUCKING KILL YOU !!!!!</strong></p>
+		<p class="j4"><span class="blinking"><strong>I WANNA FUCKING KILL YOU !!!!!</strong></span></p>
 		<br>
 		<br>
 		<br>
@@ -270,7 +278,7 @@ mark{
 	<br>
 	<br>
 	<br>
-	<p class="movie"> WATCH THIS MOVIE <strong><a href="https://www.youtube.com/watch?v=PlSjPfpmhIU&t=5261s"> The Wolf of Wall Street"</a></strong> 2:03:46 - 2:05:05</p>
+	<p class="movie"> WATCH THIS MOVIE <strong><a href="https://www.youtube.com/watch?v=PlSjPfpmhIU&t=5261s"> The Wolf of Wall Street"</a></strong> [2:03:46 - 2:05:05]</p>
 	<br>
 	<!-- <iframe padding-left: 40px width="560" height="315" src="https://www.youtube.com/embed/PlSjPfpmhIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 	<br>
