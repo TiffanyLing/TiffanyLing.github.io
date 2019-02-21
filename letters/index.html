@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+@import url("https://use.typekit.net/dtz4rwi.css");
+.letterleft{
+	padding-left:150px;
+}
+.letterright1{
+	position:absolute;
+	z-index:2;
+	left: 330px;
+	top:187px;
+}
+.letterright2{
+	position:absolute;
+	z-index:2;
+	left: 330px;
+	top:345px;
+}
+.text{
+	font-family:futura-pt, sans-serif;
+	position:absolute;
+	z-index:2;
+	left: 330px;
+	top:308px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #55544e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+ 	background-color: #94766f;
+	font-family: futura-pt, sans-serif;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #697060;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:#55544e;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+</style>
+</head>
+<body>
+<span style="font-size:30px;cursor:pointer;color:#55544e;font-family: futura-pt, sans-serif; padding: 20px; position: fixed;" onclick="openNav()">&#9776; M E N U</span>
+		<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="../index.html">H O M E</a>
+  		<a href="#">A B O U T</a>
+  		<a href="#">S T U D I O</a>
+  		<a href="#">L A B</a>
+  		<a href="#">P O R T F O L I O</a>
+  		<a href="../contact.html">C O N T A C T</a>
+	</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	<p class="letterleft"><a href="b.html"><img border="1"  src="images/b.jpg" width="100" height="100"></a></p>
+			<br>
+
+	<p class="letterleft"><a href="e.html"><img border="1"  src="images/e.jpg" width="100" height="100"></a></p>
+	<p class="letterright1"><a href="g.html"><img border="1"  src="images/g.jpg" width="100" height="100"></a></p>
+	<p class="letterright2"><a href="z.html"><img border="1"  src="images/z.jpg" width="100" height="100"></a></p>
+	<p class="text">CLICK ON THE BUTTONS..</p>
+	<script>
+		function openNav() {
+  		document.getElementById("mySidenav").style.width = "250px";
+	}
+		function closeNav() {
+  		document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
+</body>
+</html>
