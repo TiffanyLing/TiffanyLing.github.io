@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+<style>
+@import url("https://use.typekit.net/dtz4rwi.css");
+.gtb{
+  width: 0;
+  height: 0;
+  border-top: 21.6vh solid transparent;
+  border-right: 22.5vh solid black;
+  border-bottom:21.6vh solid transparent;
+  z-index: 2;
+  position: absolute;
+  left:48vh;
+  top:23.5vh;
+}
+.gtw{
+  width: 0;
+  height: 0;
+  border-top: 18vh solid transparent;
+  border-right: 18.75vh solid white;
+  border-bottom: 18vh solid transparent;
+  z-index: 2;
+  position: absolute;
+  left:53vh;
+  top:30vh;
+}
+.gr1{
+  height: 15vh;
+  width: 1vh;
+  background-color: black;
+  z-index: 2;
+  position: absolute;
+  left:69.5vh;
+  top:50.5vh;
+}
+.gr2{
+  height: 5vh;
+  width: 7vh;
+  background-color: black;
+  z-index: 2;
+  position: absolute;
+  left:63.5vh;
+  top:46vh;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #55544e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: #94766f;
+  font-family: futura-pt, sans-serif;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #697060;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:#55544e;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+    <span style="font-size:30px;cursor:pointer;color:#55544e;font-family: futura-pt, sans-serif; padding: 20px; position: fixed;" onclick="openNav()">&#9776; M E N U</span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../../index.html">H O M E</a>
+      <a href="index.html">I N D E X <div>( RESPONSIVE )</div></a>
+      <a href="../index.html">I N D E X</a>      
+      <a href="e.html">E</a>
+      <a href="z.html">Z</a>
+      <a href="b.html">B</a>
+  </div>
+  <div id="uppercase-g">
+    <div class="gtb"></div>
+    <div class="gtw"></div>
+    <div class="gr1"></div>
+    <div class="gr2"></div>
+  </div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+</body>
+</html>

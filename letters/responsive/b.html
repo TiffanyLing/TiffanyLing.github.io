@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+@import url("https://use.typekit.net/dtz4rwi.css");
+.bt1 {
+  width: 1;
+  height: 1;
+  border-top: 15vh solid transparent;
+  border-left: 30vh solid black;
+  border-bottom: 15vh solid transparent;
+  z-index: 2;
+  position: absolute;
+  left:46vh;
+  top:37vh;
+}
+.btw1 {
+  width: 0;
+  height: 0;
+  border-top: 9vh solid transparent;
+  border-left: 18vh solid white;
+  border-bottom: 9vh solid transparent;
+  z-index: 2;
+  position: absolute;
+  left:47vh;
+  top:39vh;
+}
+.bt2 {
+  width: 1;
+  height: 1;
+  border-top: 10vh solid transparent;
+  border-left: 20vh solid black;
+  border-bottom: 10vh solid transparent;
+  padding-left: 10vh;
+  z-index: 2;
+  position: absolute;
+  left:46vh;
+  top:24.7vh;
+}
+.btw2 {
+  width: 0;
+  height: 0;
+  border-top: 6vh solid transparent;
+  border-left: 12vh solid white;
+  border-bottom: 6vh solid transparent;
+  padding-left: 10vh;
+  z-index: 2;
+  position: absolute;
+  left:47vh;
+  top:26.7vh;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #55544e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: #94766f;
+  font-family: futura-pt, sans-serif;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #697060;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color:#55544e;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+  <span style="font-size:30px;cursor:pointer;color:#55544e;font-family: futura-pt, sans-serif; padding: 20px; position: fixed;" onclick="openNav()">&#9776; M E N U</span>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="../../index.html">H O M E</a>
+      <a href="index.html">I N D E X <div>( RESPONSIVE )</div></a>
+      <a href="../index.html">I N D E X</a>      
+      <a href="e.html">E</a>
+      <a href="z.html">Z</a>
+      <a href="g.html">G</a>
+  </div>
+
+	<div id="uppercase-b">
+    <div class="bt1"></div>
+    <div class="btw1"></div>
+    <div class="bt2"></div>
+    <div class="btw2"></div>
+	</div>
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+</body>
+</html>
+
