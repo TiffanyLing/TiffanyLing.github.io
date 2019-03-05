@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Helpful Recipe</title>
+<style>
+	 @import url("https://use.typekit.net/dtz4rwi.css");
+	 .title{
+	 	font-family:proxima-nova, sans-serif;
+	 	font-size:50px;
+	 	padding-left: 10px;
+	 	text-shadow:3px 3px 3px white;
+	 }
+	 .tc{
+	 	font-family: source-han-serif-tc, serif;
+		font-weight: 700;
+		font-style: normal;
+	 	font-size:45px;
+	 	padding-left:10px;
+	 	padding-right:50px;
+	 	text-shadow:3px 3px 3px white;
+	 }
+	 .text{
+		font-family: cabrito-normal, sans-serif;
+		font-size:20px;
+		padding-left: 40px;
+		padding-right: 20px;
+		line-height: 25px;
+	 }
+	 .d{
+	 	font-family:cabrito-normal, sans-serif;
+	 	font-size:20px;
+	 	padding-left:40px;
+	 	padding-right:10px;
+	 	line-height: 30px;
+	 	color:#792C0C;
+	 	text-align: right; 	
+	 }
+	.img{
+	 	width:375px;
+	 	position: absolute;
+	 	z-index:-2;
+	 	top:80px;
+	 }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #55544e;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 100px;
+ 	background-color: #94766f;
+	font-family: futura-pt, sans-serif;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #697060;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 70px;
+  margin-left: 50px;
+  color:#55544e;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  font-family: cabrito-normal, sans-serif;
+  font-size:20px;
+  padding-left: 60px;
+  padding-right: 20px;
+  line-height: 25px;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: orange;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+.b{
+	font-family: futura-pt, sans-serif;
+	font-size:20px;
+	position:absolute;
+	z-index: 3;
+	left:30px;
+	top: 400px;
+}
+.i{
+	font-family: futura-pt, sans-serif;
+	font-size:20px;
+	position:absolute;
+	z-index: 3;
+	left:30px;
+	top: 1400px;
+}
+.s1{
+	font-family: futura-pt, sans-serif;
+	font-size:20px;
+	position:absolute;
+	z-index: 3;
+	left:30px;
+	top: 2130px;
+}
+.s2{
+	font-family: futura-pt, sans-serif;
+	font-size:20px;
+	position:absolute;
+	z-index: 3;
+	left:30px;
+	top: 2850px;
+}
+.s3{
+	font-family: futura-pt, sans-serif;
+	font-size:20px;
+	position:absolute;
+	z-index: 3;
+	left:30px;
+	top: 3622px;
+}
+.s4{
+	font-family: futura-pt, sans-serif;
+	font-size:20px;
+	position:absolute;
+	z-index: 3;
+	left:30px;
+	top: 4368px;
+}
+.s5{
+	font-family: futura-pt, sans-serif;
+	font-size:20px;
+	position:absolute;
+	z-index: 3;
+	left:30px;
+	top: 5113px;
+}
+.s6{
+	font-family: futura-pt, sans-serif;
+	font-size:20px;
+	position:absolute;
+	z-index: 3;
+	left:30px;
+	top: 5984px;
+}
+.new{
+	font-family: futura-pt, sans-serif;
+	font-size:20px;
+	position:absolute;
+	z-index: 3;
+	left:30px;
+	top: 6855px;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position: absolute;
+  left: 100px;
+  font-family: futura-pt, sans-serif;
+  outline: 1px dotted black;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body style="position:relative; display:inline-block;">
+	<span style="font-size:25px;cursor:pointer;color:#55544e;font-family: futura-pt, sans-serif; padding-left: 20px; position: fixed;" onclick="openNav()">&#9776; M E N U</span>
+		<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="../index.html">H O M E</a>
+  		<a href="#">A B O U T</a>
+  		<a href="#">S T U D I O</a>
+  		<a href="#">L A B</a>
+  		<a href="#">P O R T F O L I O</a>
+  		<a href="../contact.html">C O N T A C T</a>
+	</div>
+<section id="start">
+	<br>
+	<Br>
+	<Br>
+	<br>
+	<img src="t.png" class="img">
+	<br>
+	<div class="tc">法 蘭 西 多 士</div>
+	<div class="title">HONG KONG</div>
+	<div class="title">STYLE</div>
+	<div class="title">FRENCH</div>
+	<div class="title">TOAST</div>
+	<Br>
+	<Br>
+	<br>
+	<button style="vertical-align:middle;" class="b button"><a href="#ing" style="color: #FF5C0D;"><span>Let's do it !!</span></a></button>	
+	<br>
+	<BR>
+	<BR>
+	<BR>
+	<div class="d">THIS IS MY FAVORITE SNACK FROM HONG KONG TRADITIONAL CAFÉ.</div>
+	<div class="d">IT IS MY SATISFY DESIRES IN MY CHILDHOOD TIME.</div>
+	<div class="d">IT IS ALSO ONE OF THE MOST POPULAR SNACKS AMONG HONG KONG PEOPLE.</div>
+	<br>
+	<br>
+</section>
+<section id="ing">
+	<Br>
+	<Br>
+	<p class="title"> INGREDIENTS:</p>
+	<Br>
+	<ul id="myUL">
+  		<li>2 slice milk bread</li>
+  		<li class="checked">1 egg</li>
+  		<li>1/2 tsp vanilla extract</li>
+  		<li>Peanut butter</li>
+ 		<li>1 slice of butter</li>
+ 	 	<li>Maple syrup/ sweetened condensed milk/ honey</li>
+	</ul>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<button style="vertical-align:middle;" class="i button"><a href="#1" style="color: #FF5C0D;"><span>S T E P 1</span></a></button>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</section>
+<section id="1">
+	<br>
+	<br>
+	<p class="title">STEP 1</p>
+	<div class="text">
+		<div>Evenly spread a generous amount of peanut butter on one side of bread, about 1.5 tbsp.</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<button style="vertical-align:middle;" class="s1 button"><a href="#2" style="color: #FF5C0D;"><span>S T E P 2</span></a></button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>				
+	</div>
+</section>
+<section id="2">
+	<br>
+	<br>
+	<p class="title">STEP 2</p>
+	<div class="text">
+		<br>
+		<div>Put two slices of bread together and gently press the bread to seal the sides. Remove the bread crust from the 4 sides.</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<button style="vertical-align:middle;" class="s2 button"><a href="#3" style="color: #FF5C0D;"><span>S T E P 3</span></a></button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+</section>
+<section id="3">
+	<br>
+	<br>
+	<p class="title">STEP 3</p>
+	<div class="text">
+		<br>
+		<div>Make the egg batter by beating the egg with vanilla extract until well blended.</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<button style="vertical-align:middle;" class="s3 button"><a href="#4" style="color: #FF5C0D;"><span>S T E P 4</span></a></button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+</section>
+<section id="4">
+	<br>
+	<br>
+	<p class="title">STEP 4</p>
+	<div class="text">
+		<br>
+		<div>Drench the bread in the egg batter until all sides are well coated.</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<button style="vertical-align:middle;" class="s4 button"><a href="#5" style="color: #FF5C0D;"><span>S T E P 5</span></a></button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+</section>
+<section id="5">
+	<br>
+	<br>
+	<p class="title">STEP 5</p>
+	<div class="text">
+		<div>For the healthier version, pan fry the toast in a non-stick pan with 1.5 tbsp of oil until all sides are golden brown, about 1 minutes per side over medium heat. Make sure you pan fry all 6 sides to get that uniform look. For the traditional version, deep fry the toast until golden brown, about 2 minutes. Plate the toast, place a thin slice of butter in the center of the toast and drizzle either maple syrup or condensed milk, or honey over the toast.</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<button style="vertical-align:middle;" class="s5 button"><a href="#6" style="color: #FF5C0D;"><span>S T E P 6</span></a></button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+</section>
+<section id="6">
+	<br>
+	<br>
+	<p class="title">STEP 6</p>
+	<div class="text">
+		<br>
+		<div>Serve the toast with hot or cold Hong Kong style milk tea. It also goes very well with latte or cappuccino.</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<button style="vertical-align:middle;" class="s6 button"><a href="#enjoy" style="color: #FF5C0D;"><span>N E X T</span></a></button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+</section>
+<section id="enjoy">
+	<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	<div class="title">E N J O Y !</div>
+	<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<button style="vertical-align:middle;" class="new button"><a href="#start" style="color: #FF5C0D;"><span>DO IT AGAIN</span></a></button>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+</section>
+<script>
+	function openNav() {
+  	document.getElementById("mySidenav").style.width = "250px";
+}
+
+	function closeNav() {
+  	document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</script>
+<script>
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+</script>
+<script>
+  	(function(d) {
+    var config = {
+      kitId: 'jvd8biw',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+</body>
+</html> 
