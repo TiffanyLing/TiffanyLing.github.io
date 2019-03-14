@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Accessable Recipe</title>
+	<title>Enjoy!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 	 @import url("https://use.typekit.net/dtz4rwi.css");
-	 @import url("https://use.typekit.net/dtz4rwi.css");
-	 .title{
+	 .t{
 	 	font-family:proxima-nova, sans-serif;
 	 	font-size:30px;
 	 	padding-left: 60px;
-	 	text-shadow: 2px 2px 2px white;
+	 	text-shadow:2px 2px 2px white;
 	 }
 	 .tc{
 	 	font-family: source-han-serif-tc, serif;
@@ -18,21 +18,26 @@
 	 	font-size:60px;
 	 	padding-left:88px;
 	 	padding-right:50px;
-	 	text-shadow: 2px 2px 2px white;
+	 	text-shadow:2px 2px 2px white;
 	 }
 	 .text{
 		font-family: cabrito-normal, sans-serif;
-		font-size:10px;
-		padding-left: 100px;
-		padding-right: 300px;
-		line-height: 40px;
+		font-size:18px;
+		padding-left: 70px;
+		padding-right: 50px;
+		line-height: 25px;
 	 }
+	 .title{
+	 	font-family:proxima-nova, sans-serif;
+	 	font-size:80px;
+	 	padding-left: 90px;
+	 }	 
 	 .d{
 	 	font-family:cabrito-normal, sans-serif;
-	 	font-size:18px;
-	 	padding-left:50px;
-	 	padding-right:50px;
-	 	line-height: 23px;
+	 	font-size:25px;
+	 	padding-left:100px;
+	 	padding-right:300px;
+	 	line-height: 25px;
 	 }
 	.img{
 	 	border-radius:80%;
@@ -42,6 +47,16 @@
 	 	left:50px;
 	 	top:130px;
 	 	border-radius: 50%;
+	 }
+	 .num{
+	 	position: absolute;
+	 	z-index: 3;
+	 	left: 800px;
+	 	top:180px;
+	 	font-family:font-family: fairplex-narrow, serif;
+	 	font-size: 200px;
+	 	color:white;
+	 	text-shadow: -2px 0 #FF5C0D, 0 2px #FF5C0D, 2px 0 #FF5C0D, 0 -2px #FF5C0D;	 	
 	 }
 .sidenav {
   height: 100%;
@@ -98,7 +113,7 @@
   text-align: center;
   font-size: 20px;
   padding: 20px;
-  width: 200px;
+  width: 210px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -132,6 +147,28 @@
   opacity: 1;
   right: 0;
 }
+/* page num */
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 10px;
+}
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.next {
+  background-color: gray;
+  color: white;
+  font-size:20px;
+}
+.page{
+	font-family: cabrito-normal, sans-serif;
+	font-size:20px;	
+}
+.round {
+  border-radius: 50%;
+}
 </style>
 </head>
 <body>
@@ -156,28 +193,16 @@
 	<Br>
 	<Br>
 	<div class="tc">法 蘭 西 多 士</div>
-	<p class="title">HONG KONG STYLE FRENCH TOAST</p>
+	<div class="t">HONG KONG STYLE</div>
+	<div class="t">FRENCH TOAST</div>
 	<Br>
 	<br>
 	<Br>
-	<Br>
-	<div class="d">THIS IS MY FAVORITE SNACK FROM HONG KONG TRADITIONAL CAFÉ. IT IS MY SATISFY DESIRES IN MY CHILDHOOD TIME. IT IS ALSO ONE OF THE MOST POPULAR SNACKS AMONG HONG KONG PEOPLE.</div>
+	<p class="title">Enjoy!</p>
 	<br>
-	<br>
-	<Br>
-	<Br>
-	<button style="vertical-align:middle;" class="`b button"><a href="human1.html"style="color: #FF5C0D;"><span>INGREDIENT</span></a></button>	
-	<button style="vertical-align:middle; margin-top: 100px;" class="b button"><a href="../index.html"style="color: #FF5C0D;"><span>INDEX PAGE</span></a></button>
-	<br>
-	<br>
-	<Br>
-	<Br>
-	<br>
-	<br>
-	<Br>
-	<Br>
-	<br>
-	<br>
+	<button style="vertical-align:middle" class="b button"><a href="human.html" style="color: #FF5C0D;"><span>DO IT AGAIN</span></a></button>
+	<button style="vertical-align:middle; margin-left:680px" class="b button"><a href="index.html" style="color: #FF5C0D;"><span>INDEX PAGE</span></a></button>
+
 <script>
 	function openNav() {
   	document.getElementById("mySidenav").style.width = "250px";
