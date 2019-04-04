@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+  			$("button").click(function(){
+  				$("button").hide();
+  					$("div").show();
+		});
+	</script>
+	<meta charset="utif-8">
+	<title>Piggy bouncing face</title>
+<style>
+.animation {
+	margin-left:300px;
+	margin-top:200px;
+	width: 373.7142852px;
+	height: 300px;
+	background: url("image/spreadsheet.png"); left center;
+	background-size: cover;
+	background-position: 0px 0px;
+	animation: playX 1s steps(14) infinite;
+	display: inline-block;
+	-webkit-transition: -webkit-transform.4s ease-in-out;
+			transition: transform.4s ease-in-out;
+}
+button:hover{
+	background-color: transparent;
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+}
+@keyframes playX{
+	from {background-position-x: 0px;}
+	to {background-position-x:-5232px;}
+}
+.image{
+	margin-left:300px;
+	margin-top:200px;
+	height:20px;
+}
+</style>
+</head>
+<body>
+	<button class="animation"></button>
+	<div class="image"><img src="image/angry.png"></img>	
+
+<script>
+
+var seconds = document.getElementById('container');
+  seconds.setAttribute("style", "position:fixed; top: 200px;");
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

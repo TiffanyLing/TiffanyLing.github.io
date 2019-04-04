@@ -5,8 +5,8 @@
 	<title>Piggy bouncing face</title>
 <style>
 .animation {
-	margin-left:100px;
-	margin-top:100px;
+	margin-left:300px;
+	margin-top:200px;
 	width: 373.7142852px;
 	height: 300px;
 	background: url("image/spreadsheet.png"); left center;
@@ -14,9 +14,13 @@
 	background-position: 0px 0px;
 	animation: playX 1s steps(14) infinite;
 	display: inline-block;
+	-webkit-transition: -webkit-transform.4s ease-in-out;
+			transition: transform.4s ease-in-out;
 }
 div:hover{
 	background-color: transparent;
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
 }
 @keyframes playX{
 	from {background-position-x: 0px;}
