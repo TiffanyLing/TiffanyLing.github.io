@@ -25,7 +25,7 @@ console.log(50 - 30);
 console.log(5 * 4);
 
 /* 5 */
-var countries = ["North Korea", "Egypt", "Netherland", "Greece", "Iceland", "Pueto Rico"];
+var countries = ["Egypt", "Netherland", "Greece", "Iceland", "Pueto Rico"];
 console.log(countries[0]);
 console.log(countries.length);
 
@@ -52,7 +52,7 @@ if(number <= 9){
 else if(number > 14){
 	var message = "My name is relatively long."
 }
-else{ /* can i code "else if(9 < number <= 14" in here? */
+else{ /* can i code "else if(9 < number <= 14)" in here? */
 	var message = "My name is neither short nor long."
 }
 console.log(message);
