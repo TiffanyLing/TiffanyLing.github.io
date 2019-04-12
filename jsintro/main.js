@@ -57,9 +57,19 @@ else{ /* can i code "else if(9 < number <= 14)" in here? */
 }
 console.log(message);
 
+/* 9 */ /* Function */
+var newyork = 44.6;
+var Casablanca =  64.4;
+function temperatureConverter(valNum) {
+  return (valNum-32)*(5/9)
+}
+console.log("The temperature in New York City is" + temperatureConverter(44.6) + " " + "°C" + "at 11 a.m.")
+console.log("The temperature in Casablanca is" + temperatureConverter(64.4) + " " + "°C" + "at 4 p.m.")
 
-
-
+/* 10 *//* Loop */
+for (var i = 0; i < 8; i ++) {
+	console.log
+}
 
 
 
