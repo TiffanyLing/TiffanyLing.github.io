@@ -1,7 +1,7 @@
 /* 2 */
 alert("Welcome! Please view console on your browser.")
 
-/* 3 */
+/* 3 */ /* Variable */
 var name = "Yu Tong Tiffany Ling";
 console.log(name);
 
@@ -17,19 +17,19 @@ console.log(boolean);
 var combo = name + luckynumber;
 console.log(combo);
 
-/* 4 */
+/* 4 */ /* Calculation */
 console.log(2 * 10);
 console.log(100 / 5);
 console.log(-50 + 70);
 console.log(50 - 30);
 console.log(5 * 4);
 
-/* 5 */
+/* 5 */ /* Countries */
 var countries = ["Egypt", "Netherland", "Greece", "Iceland", "Pueto Rico"];
 console.log(countries[0]);
 console.log(countries.length);
 
-/* 6 */
+/* 6 */ /* var */
 var time = new Date();
 console.log("The current time is " + time);
 
@@ -66,10 +66,11 @@ function temperatureConverter(valNum) {
 console.log("The temperature in New York City is" + temperatureConverter(44.6) + " " + "°C" + "at 11 a.m.")
 console.log("The temperature in Casablanca is" + temperatureConverter(64.4) + " " + "°C" + "at 4 p.m.")
 
-/* 10 *//* Loop */
+/* 10 */ /* Loop */
 for (var i = 0; i < 8; i ++) {
-	console.log
+	document.write("Happy" + " " + i + " " +"year-old birthday" + "<br>");
 }
+document.getElementById("demo").innerHTML = Math.random();
 
 
 
