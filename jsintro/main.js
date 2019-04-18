@@ -67,10 +67,24 @@ console.log("The temperature in New York City is" + temperatureConverter(44.6) +
 console.log("The temperature in Casablanca is" + temperatureConverter(64.4) + " " + "°C" + "at 4 p.m.")
 
 /* 10 */ /* Loop */
-for (var i = 0; i < 8; i ++) {
+for (var i = 0; i < 22; i ++) {
 	document.write("Happy" + " " + i + " " +"year-old birthday" + "<br>");
 }
+$(document).ready(function(){
+  for(var counter=0; counter<20; counter++){
+    
+      var postop = 200 + (counter * 10); 
+      var posleft = 300 + (counter * 10); 
+      
+      var mydynamicbox = '<div style="position: absolute; top: ' + postop + 'px; left: ' + posleft + 'px; width: 20px; height: 20px; background-color: white;"></div>'
+  
+      $('body').append(mydynamicbox);
+  }  
+});
+
+/* Extra Credit */
 document.getElementById("demo").innerHTML = Math.random();
+
 
 
 
