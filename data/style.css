@@ -1,0 +1,35 @@
+table {
+  width:100%;
+}
+table, th, td {
+  border: 2px solid pink;
+  border-collapse: collapse;
+}
+th, td {
+  text-align: left;
+  padding:7px;
+  font-family:Helvetica;
+  letter-spacing:2px;
+}
+table#t01 tr:nth-child(even) {
+  background-color: pink;
+}
+table#t01 tr:nth-child(odd) {
+ background-color: white;
+}
+table#t01 th {
+  background-color: #63A5FF;
+  color: white;
+  padding:12px;
+  font-size:20px;
+}
+.title{
+	font-family: Arial;
+	font-size:30px;
+	padding-left:10px;
+}
+.reference{
+	font-family: Arial;
+	font-size:15px;
+	padding-left:10px;	
+}
