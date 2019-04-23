@@ -20,74 +20,9 @@ $(document).ready(function(){
         success: function(results){
             weathertext = results.weather[0].main;
             weatherdescription = results.weather[0].description;
-            windspeed = results.wind.speed;
-            winddeg = results.wind.deg;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
             temp = results.main.temp;
-            pressure = results.main.pressure;
             humidity = results.main.humidity;
-            cloudiness = results.clouds.all;
-
-            myWeatherInterpretation();
-
-        }
-    });
-/* NY */
-    $.ajax({
-        url: 'http://http://api.openweathermap.org/data/2.5/weather?id=5128638&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            windspeed = results.wind.speed;
-            winddeg = results.wind.deg;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            cloudiness = results.clouds.all;
-
-            myWeatherInterpretation();
-
-        }
-    });   
-/* Auckland */
-    $.ajax({
-        url: 'http://http://api.openweathermap.org/data/2.5/weather?id=2193732&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            windspeed = results.wind.speed;
-            winddeg = results.wind.deg;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            cloudiness = results.clouds.all;
-
-            myWeatherInterpretation();
-
-        }
-    });
-/* Rio de Janeiro */
-    $.ajax({
-        url: 'http://http://api.openweathermap.org/data/2.5/weather?id=3451190&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
-        dataType: 'jsonp',
-        success: function(results){
-            weathertext = results.weather[0].main;
-            weatherdescription = results.weather[0].description;
-            windspeed = results.wind.speed;
-            winddeg = results.wind.deg;
-            tempmin = results.main.temp_min;
-            tempmax = results.main.temp_max;
-            temp = results.main.temp;
-            pressure = results.main.pressure;
-            humidity = results.main.humidity;
-            cloudiness = results.clouds.all;
+            visibility = results.visibility;
 
             myWeatherInterpretation();
 
@@ -98,18 +33,101 @@ $(document).ready(function(){
         
         
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('p').append('windspeed: ' + windspeed);
-        $('p').append('winddeg: ' + winddeg);
-        $('p').append('temp: ' + temp);
-        $('p').append('tempmin: ' + tempmin);
-        $('p').append('tempmax: ' + tempmax);
-        $('p').append('pressure: ' + pressure);
-        $('p').append('humidity: ' + humidity);
-        $('p').append('weathertext: ' + weathertext);
-        $('p').append('weatherdescription: ' + weatherdescription);
-        $('p').append('cloudiness: ' + cloudiness);
+        $('p1').append('temp: ' + temp);
+        $('p1').append('humidity: ' + humidity);
+        $('p1').append('weathertext: ' + weathertext);
+        $('p1').append('weatherdescription: ' + weatherdescription);
+        $('p1').append('visibility: ' + visibility);
 
-    
+        //END OF MYWEATHERINTERPRETATION FUNCTION
+    } 
+
+
+/* NY */
+    $.ajax({
+        url: 'http://http://api.openweathermap.org/data/2.5/weather?id=5128638&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            temp = results.main.temp;
+            humidity = results.main.humidity;
+            visibility = results.visibility;
+
+            myWeatherInterpretation();
+
+        }
+    });   
+    function myWeatherInterpretation(){
+        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
+        
+        
+        //JUST SEEING IF THE VALUES COME THROUGH
+        $('p2').append('temp: ' + temp);
+        $('p2').append('humidity: ' + humidity);
+        $('p2').append('weathertext: ' + weathertext);
+        $('p2').append('weatherdescription: ' + weatherdescription);
+        $('p2').append('visibility: ' + visibility);
+
+        //END OF MYWEATHERINTERPRETATION FUNCTION
+    } 
+
+
+/* Auckland */
+    $.ajax({
+        url: 'http://http://api.openweathermap.org/data/2.5/weather?id=2193732&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
+        dataType: 'jsonp',
+        success: function(results){
+               weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            temp = results.main.temp;
+            humidity = results.main.humidity;
+            visibility = results.visibility;
+
+            myWeatherInterpretation();
+
+        }
+    });
+    function myWeatherInterpretation(){
+        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
+        
+        
+        //JUST SEEING IF THE VALUES COME THROUGH
+        $('p3').append('temp: ' + temp);
+        $('p3').append('humidity: ' + humidity);
+        $('p3').append('weathertext: ' + weathertext);
+        $('p3').append('weatherdescription: ' + weatherdescription);
+        $('p3').append('visibility: ' + visibility);
+
+        //END OF MYWEATHERINTERPRETATION FUNCTION
+    } 
+
+
+/* Rio de Janeiro */
+    $.ajax({
+        url: 'http://http://api.openweathermap.org/data/2.5/weather?id=3451190&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
+        dataType: 'jsonp',
+        success: function(results){
+            weathertext = results.weather[0].main;
+            weatherdescription = results.weather[0].description;
+            temp = results.main.temp;
+            humidity = results.main.humidity;
+            visibility = results.visibility;
+
+            myWeatherInterpretation();
+
+        }
+    });
+    function myWeatherInterpretation(){
+        //THIS IS WHERE YOU CAN CUSTOMIZE YOUR PAGE'S FUNCTIONS    
+        
+        
+        //JUST SEEING IF THE VALUES COME THROUGH
+        $('p4').append('temp: ' + temp);
+        $('p4').append('humidity: ' + humidity);
+        $('p4').append('weathertext: ' + weathertext);
+        $('p4').append('weatherdescription: ' + weatherdescription);
+        $('p4').append('visibility: ' + visibility);
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     }   
