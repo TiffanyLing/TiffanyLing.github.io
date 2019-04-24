@@ -1,0 +1,117 @@
+
+@import url("https://use.typekit.net/ljd8xcw.css");
+
+.HK{
+	font-family:futura-pt, sans-serif;
+	font-size:40px;
+	font-weight: bold;
+	padding-left:180px;
+	padding-top: 100px;
+}
+.p1{
+	font-family:futura-pt, sans-serif;
+ text-align: left;
+ display:block;
+ font-size: 25px;
+ line-height: 40px;
+ /*margin: 0 auto;
+ width: 450px;
+ margin-top: 0px;
+ line-height: 25px;
+ margin-left: 200px;*/
+}
+.NY{
+	font-family:futura-pt, sans-serif;
+	font-size:40px;
+	font-weight: bold;
+	padding-left:100px;
+	position:absolute;
+	padding-left:190px;
+	padding-top: 170px;
+}
+.p2{
+	font-family:futura-pt, sans-serif;
+ text-align: left;
+ display:block;
+ font-size: 25px;
+ line-height: 40px;
+ /*margin: 0 auto;
+ width: 320px;
+ margin-top: 280px;
+ margin-left:200px;
+ line-height: 25px;*/
+
+}
+.A{
+	font-family:futura-pt, sans-serif;
+	font-size:40px;
+	font-weight: bold;
+	position:absolute;
+	left:-570px;
+	top:370px;
+}
+.p3{
+	font-family:futura-pt, sans-serif;
+ 	text-align: left;
+ 	display:block;
+ 	font-size: 25px;
+ 	line-height: 40px;
+ 	/*position:absolute;
+ 	margin: 0 auto;
+ 	width: 450px;
+ 	top: 230px;
+ 	line-height: 25px;
+ 	left: 800px;*/
+}
+.R{
+	font-family:futura-pt, sans-serif;
+	font-size:40px;
+	font-weight: bold;
+	position:absolute;
+	left:580px;
+	top:320px;
+}
+.p4{
+	font-family:futura-pt, sans-serif;
+ 	text-align: left;
+ 	display:block;
+ 	font-size: 25px;
+ 	line-height: 40px;
+ 	/*position:absolute;
+ 	margin: 0 auto;
+ 	width: 450px;
+ 	top: 630px;
+ 	line-height: 25px;
+ 	left: 800px;*/
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  opacity:40%;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
+

@@ -28,9 +28,9 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
             
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p1').append('Temperature: ' + temp + " " + '°C' + '</br>');
-        $('.p1').append('Humidity: ' + humidity + " " + '%' + '</br>');
-        $('.p1').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+        $('.p1').append('temp: ' + temp + '</br>');
+        $('.p1').append('humidity: ' + humidity + '</br>');
+        $('.p1').append('visibility: ' + visibility + '</br>');
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 
@@ -53,9 +53,9 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
             
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p2').append('Temperature: ' + temp + " " + '°C' + '</br>');
-        $('.p2').append('Humidity: ' + humidity + " " + '%' + '</br>');
-        $('.p2').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+        $('.p2').append('temp: ' + temp + '</br>');
+        $('.p2').append('humidity: ' + humidity + '</br>');
+        $('.p2').append('visibility: ' + visibility + '</br>');
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 
@@ -78,9 +78,9 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
             
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p3').append('Temperature: ' + temp + " " + '°C' +'</br>');
-        $('.p3').append('Humidity: ' + humidity + " " + '%' + '</br>');
-        $('.p3').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+        $('.p3').append('temp: ' + temp + '</br>');
+        $('.p3').append('humidity: ' + humidity + '</br>');
+        $('.p3').append('visibility: ' + visibility + '</br>');
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 
@@ -104,9 +104,9 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
             
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p4').append('Temperature: ' + temp + " " + '°C' + '</br>');
-        $('.p4').append('Humidity: ' + humidity + " " + '%' + '</br>');
-        $('.p4').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+        $('.p4').append('temp: ' + temp + '</br>');
+        $('.p4').append('humidity: ' + humidity + '</br>');
+        $('.p4').append('visibility: ' + visibility + '</br>');
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 

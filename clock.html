@@ -5,7 +5,6 @@
 </head>
 <style>
 body {
-    background: pink;
 }
 
 .clock {
@@ -17,7 +16,21 @@ body {
     font-size: 60px;
     font-family: futura;
     letter-spacing: 12px;
-
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+.purple{
+    background-color: purple;
 }
 </style>
 <body>
@@ -39,13 +52,20 @@ body {
         h = h - 12;
         session = "PM";
     }
-    
+
+    if (s == 2) {
+    $('body').addClass('red');
+    } else if (s == 2) {
+        $('body').addClass('yellow');
+}
+
     // h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
     // formula: [if_>_(unique)] ? [true()] : [false()]
     
     var time = h + ":" + m + ":" + s + " " + session;
+
     document.getElementById("MyClockDisplay").innerText = time;
     document.getElementById("MyClockDisplay").textContent = time;
     
