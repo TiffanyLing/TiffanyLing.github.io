@@ -29,8 +29,8 @@ body {
 .blue{
     background-color: blue;
 }
-.purple{
-    background-color: purple;
+.pink{
+    background-color: pink;
 }
 </style>
 <body>
@@ -55,9 +55,16 @@ body {
 
     if (s == 2) {
     $('body').addClass('red');
-    } else if (s == 2) {
-        $('body').addClass('yellow');
-}
+    } else if (s == 4) {
+        $('body').addClass('yellow');}
+      else if(s == 6) {
+        $('body').addClass('green');}
+      else if(s == 8) {
+        $('body').addClass('blue');}
+      else if(s == 0){
+        $('body').addClass('pink');
+      }
+
 
     // h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
@@ -74,7 +81,6 @@ body {
     // setTimeout(functionName, times) <- loop in certain times
     
 }
-
 showTime();
 </script>
 </html>
