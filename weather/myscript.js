@@ -116,9 +116,9 @@ $(document).ready(function(){
     
         $(function(){ 
         var img = document.getElementById("img");
-        var t = results.main.temp;
-        var h = results.main.humidity;
-        var v = results.visibility;
+        var temp = results.data.main.temp;
+        var humidity = results.main.humidity;
+        var visibility = results.visibility;
                 
         //v>10000是c v=<10000是m 
         //0=<h<30是1 30=<h<60是2 60=<h<85是3 85=<h=<100是4
@@ -129,10 +129,10 @@ $(document).ready(function(){
 
         function changeImage (){
 
-        if(v>10000){
+        if(temp>20){
             x=0;
         }
-        if(v>10000){
+        if(temp<20){
             x=1;}
 
 

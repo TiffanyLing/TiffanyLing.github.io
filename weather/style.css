@@ -108,34 +108,34 @@
 }
 .h{
 	position:absolute;
-	margin-top:100px;
-	margin-left:100px;
-	width:100vh auto;
-	height: 100vh auto;
+	margin-top:0px;
+	margin-left:0px;
+	width:50vh auto;
+	height: 50vh auto;
 	z-index:-2;
 }
 .n{
 	position:absolute;
-	margin-top:100px;
-	margin-left:100px;
-	width:300vh auto;
-	height: 100vh auto;
+	margin-top:0px;
+	margin-left:0px;
+	width:50vh auto;
+	height: 50vh auto;
 	z-index:-2;
 }
 .al{
 	position:absolute;
-	margin-top:100px;
-	margin-left:100px;
-	width:100vh auto;
-	height: 300vh auto;
+	margin-top:0px;
+	margin-left:0px;
+	width:50vh auto;
+	height: 50vh auto;
 	z-index:-2;
 }
 .w{
 	position:absolute;
-	margin-top:100px;
-	margin-left:100px;
-	width:300vh auto;
-	height: 300vh auto;
+	margin-top:0px;
+	margin-left:0px;
+	width:50vh auto;
+	height: 50vh auto;
 	z-index:-2;
 }
 
