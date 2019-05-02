@@ -1,14 +1,8 @@
 //THESE ARE THE VARIABLES WE WILL USE
-var windspeed; //Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.
-var winddeg; //Wind direction, degrees (meteorological)
+var visibility;
 var temp; //Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit. 
-var tempmin;
-var tempmax;
-var pressure; //Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa
 var humidity; //Humidity, %
-var weathertext; //Group of weather parameters (Rain, Snow, Extreme etc.)
-var weatherdescription; //Weather condition within the group
-var cloudiness; //Cloudiness, %
+
 
 
 /* HK */
@@ -20,7 +14,6 @@ $(document).ready(function(){
             temp = results.main.temp;
             humidity = results.main.humidity;
             visibility = results.visibility;
-                console.log(temp);
             myWeatherInterpretation();
         }
     });
@@ -34,6 +27,17 @@ $(document).ready(function(){
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 
+            if(temp<=0){
+            $('#imgh').attr("src","image/1bc.png");
+        }else if(temp<=10){
+            $('#imgh').attr("src","image/1tc.png");    
+        }else if(temp<=20){
+            $('#imgh').attr("src","image/2yc.png");    
+        }else if(temp<=30){
+            $('#imgh').attr("src","image/3oc.png");    
+        }else{
+            $('#imgh').attr("src","image/4rc.png");    
+        }
 });
 
 /* NY */
@@ -59,6 +63,17 @@ $(document).ready(function(){
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 
+            if(temp<=0){
+            $('#imgn').attr("src","image/1bc.png");
+        }else if(temp<=10){
+            $('#imgn').attr("src","image/1tc.png");    
+        }else if(temp<=20){
+            $('#imgn').attr("src","image/2yc.png");    
+        }else if(temp<=30){
+            $('#imgn').attr("src","image/3oc.png");    
+        }else{
+            $('#imgn').attr("src","image/4rc.png");    
+        }
 });
 
 /* Auckland */
@@ -84,6 +99,17 @@ $(document).ready(function(){
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 
+            if(temp<=0){
+            $('#imga').attr("src","image/1bc.png");
+        }else if(temp<=10){
+            $('#imga').attr("src","image/1tc.png");    
+        }else if(temp<=20){
+            $('#imga').attr("src","image/2yc.png");    
+        }else if(temp<=30){
+            $('#imga').attr("src","image/3oc.png");    
+        }else{
+            $('#imga').attr("src","image/4rc.png");    
+        }
 });
 
 
@@ -110,31 +136,24 @@ $(document).ready(function(){
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 
+
+        if(temp<=0){
+            $('#imgw').attr("src","image/1bc.png");
+        }else if(temp<=10){
+            $('#imgw').attr("src","image/1tc.png");    
+        }else if(temp<=20){
+            $('#imgw').attr("src","image/2yc.png");    
+        }else if(temp<=30){
+            $('#imgw').attr("src","image/3oc.png");    
+        }else{
+            $('#imgw').attr("src","image/4rc.png");    
+        }
+
 });
 
 //images
     
-        $(function(){ 
-        var img = document.getElementById("img");
-        var temp = results.data.main.temp;
-        var humidity = results.main.humidity;
-        var visibility = results.visibility;
                 
         //v>10000是c v=<10000是m 
         //0=<h<30是1 30=<h<60是2 60=<h<85是3 85=<h=<100是4
         //t=<0是b 0<t<10是t 10=<t<20是y 20=<t<30是o t>=30是r
-        var images = new Arrey();       
-        images[0] = 'image/1bc.png';        
-        images[1] = 'image/1tc.png';
-
-        function changeImage (){
-
-        if(temp>20){
-            x=0;
-        }
-        if(temp<20){
-            x=1;}
-
-
-        }
-    });
