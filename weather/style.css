@@ -7,6 +7,7 @@
 	font-weight: bold;
 	padding-left:180px;
 	padding-top: 100px;
+	cursor: pointer;
 }
 .p1{
 	font-family:futura-pt, sans-serif;
@@ -138,6 +139,62 @@
 	height: 50vh auto;
 	z-index:-2;
 }
+
+.a {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-image: url("image/3oc.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 2000px;
+	height: 2000px;
+	z-index: -1;
+}
+
+.pattern-container {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.pattern-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 100px;
+	background-image: url("image/3oc.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pattern-box ~ .hk {
+	background-image: url("image/3rc.png")!important;
+}
+
+.pattern-box ~ .ny {
+	background-image: url("image/1bm.png")!important;
+}
+
+.pattern-box ~ .a {
+	background-image: url("image/4ym.png")!important;
+}
+
+.pattern-box ~ .r {
+	background-image: url("image/2tc.png")!important;
+}
+
+.1bc {
+	background-image: url("image/1bc.png")!important
+}
+
+
 
 
 
