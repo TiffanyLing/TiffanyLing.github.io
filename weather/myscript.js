@@ -5,7 +5,7 @@ var humidity; //Humidity, %
 
 
 
-/* HK */
+
 $(document).ready(function(){
 
     var hCheck = false, nCheck = false, aCheck = false, wCheck = false;
@@ -86,6 +86,7 @@ $(document).ready(function(){
         }
     });
 
+/* HK */
     $.ajax({
         url: 'http://api.openweathermap.org/data/2.5/weather?id=1819730&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
@@ -104,16 +105,47 @@ $(document).ready(function(){
         $('.p1').append('Humidity: ' + humidity + " " + '%' + '</br>');
         $('.p1').append('Visibility: ' + visibility + " " + 'm' + '</br>');
             
-        if(temp<=0 && humidity == 50 || visibility == 50){
-            $('#imgh').attr("src","image/1bc.png");
-        }else if(temp<=10){
-            $('#imgh').attr("src","image/1tc.png");    
-        }else if(temp<=20){
-            $('#imgh').attr("src","image/2yc.png");    
-        }else if(temp<=30){
-            $('#imgh').attr("src","image/3oc.png");    
-        }else{
-            $('#imgh').attr("src","image/4rc.png");    
+        if(visibility>10000 && temp<=0 && humidity<=30 && humidity>=0){
+            waWeather = "1b";
+            //$('#imgw').attr("src","image/1bc.png");
+        }else if(visibility>=10000 && temp>0 && temp<=10 && humidity<=30 && humidity>=0){
+            $('#imgh').attr("src","gif/1t.gif");    
+        }else if(visibility>=10000 && temp>10 && temp<=20 && humidity<=30 && humidity>=0){
+            $('#imgh').attr("src","gif/1y.gif");    
+        }else if(visibility>=10000 && temp>20 && temp<=30 && humidity<=30 && humidity>=0){
+            $('#imgh').attr("src","gif/1o.gif");
+        }else if(visibility>=10000 && temp>30 && humidity<=30 && humidity>=0){
+            $('#imgh').attr("src","gif/1r.gif"); 
+        }else if(visibility>=10000 && temp<=0 && humidity<=60 && humidity>30){
+            $('#imgh').attr("src","gif/2b.gif"); 
+        }else if(visibility>=10000 && temp>0 && temp<=10 && humidity<=60 && humidity>30){
+            $('#imgh').attr("src","gif/2t.gif");   
+        }else if(visibility>=10000 && temp>10 && temp<=20 && humidity<=60 && humidity>30){
+            $('#imgh').attr("src","gif/2y.gif"); 
+        }else if(visibility>=10000 && temp>20 && temp<=30 && humidity<=60 && humidity>30){
+            $('#imgh').attr("src","gif/2o.gif");
+        }else if(visibility>=10000 && temp>30 && humidity<=60 && humidity>30){
+            $('#imgh').attr("src","gif/2r.gif");
+        }else if(visibility>=10000 && temp<=0 && humidity<=85 && humidity>60){
+            $('#imgh').attr("src","gif/3b.gif");
+        }else if(visibility>=10000 && temp>0 && temp<=10 && humidity<=85 && humidity>60){
+            $('#imgh').attr("src","gif/3t.gif");
+        }else if(visibility>=10000 && temp>10 && temp<=20 && humidity<=85 && humidity>60){
+            $('#imgh').attr("src","gif/3y.gif");
+        }else if(visibility>=10000 && temp>20 && temp<=30 && humidity<=85 && humidity>60){
+            $('#imgh').attr("src","gif/3o.gif");
+        }else if(visibility>=10000 && temp>30 && humidity<=85 && humidity>60){
+            $('#imgh').attr("src","gif/3r.gif");
+        }else if(visibility>=10000 && temp<=0 && humidity<=100 && humidity>85){
+            $('#imgh').attr("src","gif/4b.gif");
+        }else if(visibility>=10000 && temp>0 && temp<=10 && humidity<=100 && humidity>85){
+            $('#imgh').attr("src","gif/4t.gif");
+        }else if(visibility>=10000 && temp>10 && temp<=20 && humidity<=100 && humidity>85){
+            $('#imgh').attr("src","gif/4y.gif");
+        }else if(visibility>=10000 && temp>20 && temp<=30 && humidity<=100 && humidity>85){
+            $('#imgh').attr("src","gif/4o.gif");
+        }else if(visibility>=10000 && temp>30 && humidity<=100 && humidity>85){
+            $('#imgh').attr("src","gif/4r.gif");
         }
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 
@@ -143,16 +175,47 @@ $(document).ready(function(){
         $('.p2').append('Humidity: ' + humidity + " " + '%' + '</br>');
         $('.p2').append('Visibility: ' + visibility + " " + 'm' + '</br>');
             
-            if(temp<=0){
-            $('#imgn').attr("src","image/1bc.png");
-        }else if(temp<=10){
-            $('#imgn').attr("src","image/1tc.png");    
-        }else if(temp<=20){
-            $('#imgn').attr("src","image/2yc.png");    
-        }else if(temp<=30){
-            $('#imgn').attr("src","image/3oc.png");    
-        }else{
-            $('#imgn').attr("src","image/4rc.png");    
+        if(visibility>10000 && temp<=0 && humidity<=30 && humidity>=0){
+            waWeather = "1bc";
+            //$('#imgw').attr("src","image/1bc.png");
+        }else if(temp>0 && temp<=10 && humidity<=30 && humidity>=0){
+            $('#imgn').attr("src","gif/1t.gif");    
+        }else if(temp>10 && temp<=20 && humidity<=30 && humidity>=0){
+            $('#imgn').attr("src","gif/1y.gif");    
+        }else if(temp>20 && temp<=30 && humidity<=30 && humidity>=0){
+            $('#imgn').attr("src","gif/1o.gif");
+        }else if(temp>30 && humidity<=30 && humidity>=0){
+            $('#imgn').attr("src","gif/1r.gif"); 
+        }else if(temp<=0 && humidity<=60 && humidity>30){
+            $('#imgn').attr("src","gif/2b.gif"); 
+        }else if(temp>0 && temp<=10 && humidity<=60 && humidity>30){
+            $('#imgn').attr("src","gif/2t.gif");   
+        }else if(temp>10 && temp<=20 && humidity<=60 && humidity>30){
+            $('#imgn').attr("src","gif/2y.gif"); 
+        }else if(temp>20 && temp<=30 && humidity<=60 && humidity>30){
+            $('#imgn').attr("src","gif/2o.gif");
+        }else if(temp>30 && humidity<=60 && humidity>30){
+            $('#imgn').attr("src","gif/2r.gif");
+        }else if(temp<=0 && humidity<=85 && humidity>60){
+            $('#imgn').attr("src","gif/3b.gif");
+        }else if(temp>0 && temp<=10 && humidity<=85 && humidity>60){
+            $('#imgn').attr("src","gif/3t.gif");
+        }else if(temp>10 && temp<=20 && humidity<=85 && humidity>60){
+            $('#imgn').attr("src","gif/3y.gif");
+        }else if(temp>20 && temp<=30 && humidity<=85 && humidity>60){
+            $('#imgn').attr("src","gif/3o.gif");
+        }else if(temp>30 && humidity<=85 && humidity>60){
+            $('#imgn').attr("src","gif/3r.gif");
+        }else if(temp<=0 && humidity<=100 && humidity>85){
+            $('#imgn').attr("src","gif/4b.gif");
+        }else if(temp>0 && temp<=10 && humidity<=100 && humidity>85){
+            $('#imgn').attr("src","gif/4t.gif");
+        }else if(temp>10 && temp<=20 && humidity<=100 && humidity>85){
+            $('#imgn').attr("src","gif/4y.gif");
+        }else if(temp>20 && temp<=30 && humidity<=100 && humidity>85){
+            $('#imgn').attr("src","gif/4o.gif");
+        }else if(temp>30 && humidity<=100 && humidity>85){
+            $('#imgn').attr("src","gif/4r.gif");
         }
         //END OF MYWEATHERINTERPRETATION FUNCTION
     } 
@@ -180,20 +243,50 @@ $(document).ready(function(){
         $('.p3').append('Humidity: ' + humidity + " " + '%' + '</br>');
         $('.p3').append('Visibility: ' + visibility + " " + 'm' + '</br>');
 
-        if(temp<=0){
-            $('#imga').attr("src","image/1bc.png");
-        }else if(temp<=10){
-            $('#imga').attr("src","image/1tc.png");    
-        }else if(temp<=20){
-            $('#imga').attr("src","image/2yc.png");    
-        }else if(temp<=30){
-            $('#imga').attr("src","image/3oc.png");    
-        }else{
-            $('#imga').attr("src","image/4rc.png");    
+        if(visibility>10000 && temp<=0 && humidity<=30 && humidity>=0){
+            waWeather = "1bc";
+            //$('#imgw').attr("src","image/1bc.png");
+        }else if(temp>0 && temp<=10 && humidity<=30 && humidity>=0){
+            $('#imga').attr("src","gif/1t.gif");    
+        }else if(temp>10 && temp<=20 && humidity<=30 && humidity>=0){
+            $('#imga').attr("src","gif/1y.gif");    
+        }else if(temp>20 && temp<=30 && humidity<=30 && humidity>=0){
+            $('#imga').attr("src","gif/1o.gif");
+        }else if(temp>30 && humidity<=30 && humidity>=0){
+            $('#imga').attr("src","gif/1r.gif"); 
+        }else if(temp<=0 && humidity<=60 && humidity>30){
+            $('#imga').attr("src","gif/2b.gif"); 
+        }else if(temp>0 && temp<=10 && humidity<=60 && humidity>30){
+            $('#imga').attr("src","gif/2t.gif");   
+        }else if(temp>10 && temp<=20 && humidity<=60 && humidity>30){
+            $('#imga').attr("src","gif/2y.gif"); 
+        }else if(temp>20 && temp<=30 && humidity<=60 && humidity>30){
+            $('#imga').attr("src","gif/2o.gif");
+        }else if(temp>30 && humidity<=60 && humidity>30){
+            $('#imga').attr("src","gif/2r.gif");
+        }else if(temp<=0 && humidity<=85 && humidity>60){
+            $('#imga').attr("src","gif/3b.gif");
+        }else if(temp>0 && temp<=10 && humidity<=85 && humidity>60){
+            $('#imga').attr("src","gif/3t.gif");
+        }else if(temp>10 && temp<=20 && humidity<=85 && humidity>60){
+            $('#imga').attr("src","gif/3y.gif");
+        }else if(temp>20 && temp<=30 && humidity<=85 && humidity>60){
+            $('#imga').attr("src","gif/3o.gif");
+        }else if(temp>30 && humidity<=85 && humidity>60){
+            $('#imga').attr("src","gif/3r.gif");
+        }else if(temp<=0 && humidity<=100 && humidity>85){
+            $('#imga').attr("src","gif/4b.gif");
+        }else if(temp>0 && temp<=10 && humidity<=100 && humidity>85){
+            $('#imga').attr("src","gif/4t.gif");
+        }else if(temp>10 && temp<=20 && humidity<=100 && humidity>85){
+            $('#imga').attr("src","gif/4y.gif");
+        }else if(temp>20 && temp<=30 && humidity<=100 && humidity>85){
+            $('#imga').attr("src","gif/4o.gif");
+        }else if(temp>30 && humidity<=100 && humidity>85){
+            $('#imga').attr("src","gif/4r.gif");
         }
-
         //END OF MYWEATHERINTERPRETATION FUNCTION
-    } 
+        } 
             
 });
 
@@ -222,84 +315,44 @@ $(document).ready(function(){
         if(visibility>10000 && temp<=0 && humidity<=30 && humidity>=0){
             waWeather = "1bc";
             //$('#imgw').attr("src","image/1bc.png");
-        }else if(visibility>10000 && temp>0 && temp<=10 && humidity<=30 && humidity>=0){
-            $('#imgw').attr("src","image/1tc.png");    
-        }else if(visibility>10000 && temp>10 && temp<=20 && humidity<=30 && humidity>=0){
-            $('#imgw').attr("src","image/1yc.png");    
-        }else if(visibility>10000 && temp>20 && temp<=30 && humidity<=30 && humidity>=0){
-            $('#imgw').attr("src","image/1oc.png");
-        }else if(visibility>10000 && temp>30 && humidity<=30 && humidity>=0){
-            $('#imgw').attr("src","image/1rc.png"); 
-        }else if(visibility>10000 && temp<=0 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2bc.png"); 
-        }else if(visibility>10000 && temp>0 && temp<=10 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2tc.png");   
-        }else if(visibility>10000 && temp>10 && temp<=20 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2yc.png"); 
-        }else if(visibility>10000 && temp>20 && temp<=30 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2oc.png");
-        }else if(visibility>10000 && temp>30 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2rc.png");
-        }else if(visibility>10000 && temp<=0 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3bc.png");
-        }else if(visibility>10000 && temp>0 && temp<=10 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3tc.png");
-        }else if(visibility>10000 && temp>10 && temp<=20 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3yc.png");
-        }else if(visibility>10000 && temp>20 && temp<=30 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3oc.png");
-        }else if(visibility>10000 && temp>30 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3rc.png");
-        }else if(visibility>10000 && temp<=0 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4bc.png");
-        }else if(visibility>10000 && temp>0 && temp<=10 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4tc.png");
-        }else if(visibility>10000 && temp>10 && temp<=20 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4yc.png");
-        }else if(visibility>10000 && temp>20 && temp<=30 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4oc.png");
-        }else if(visibility>10000 && temp>30 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4rc.png");
-        }else if(visibility<=10000 && temp<=0 && humidity<=30 && humidity>=0){
-            $('#imgw').attr("src","image/1bm.png");
-        }else if(visibility<=10000 && temp>0 && temp<=10 && humidity<=30 && humidity>=0){
-            $('#imgw').attr("src","image/1tm.png");    
-        }else if(visibility<=10000 && temp>10 && temp<=20 && humidity<=30 && humidity>=0){
-            $('#imgw').attr("src","image/1ym.png");    
-        }else if(visibility<=10000 && temp>20 && temp<=30 && humidity<=30 && humidity>=0){
-            $('#imgw').attr("src","image/1om.png");
-        }else if(visibility<=10000 && temp>30 && humidity<=30 && humidity>=0){
-            $('#imgw').attr("src","image/1rm.png"); 
-        }else if(visibility<=10000 && temp<=0 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2bm.png"); 
-        }else if(visibility<=10000 && temp>0 && temp<=10 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2tm.png");   
-        }else if(visibility<=10000 && temp>10 && temp<=20 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2ym.png"); 
-        }else if(visibility<=10000 && temp>20 && temp<=30 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2om.png");
-        }else if(visibility<=10000 && temp>30 && humidity<=60 && humidity>30){
-            $('#imgw').attr("src","image/2rm.png");
-        }else if(visibility<=10000 && temp<=0 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3bm.png");
-        }else if(visibility<=10000 && temp>0 && temp<=10 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3tm.png");
-        }else if(visibility<=10000 && temp>10 && temp<=20 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3ym.png");
-        }else if(visibility<=10000 && temp>20 && temp<=30 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3om.png");
-        }else if(visibility<=10000 && temp>30 && humidity<=85 && humidity>60){
-            $('#imgw').attr("src","image/3rm.png");
-        }else if(visibility<=10000 && temp<=0 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4bm.png");
-        }else if(visibility<=10000 && temp>0 && temp<=10 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4tm.png");
-        }else if(visibility<=10000 && temp>10 && temp<=20 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4ym.png");
-        }else if(visibility<=10000 && temp>20 && temp<=30 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4om.png");
-        }else if(visibility<=10000 && temp>30 && humidity<=100 && humidity>85){
-            $('#imgw').attr("src","image/4rm.png");
+        }else if(temp>0 && temp<=10 && humidity<=30 && humidity>=0){
+            $('#imgw').attr("src","gif/1t.gif");    
+        }else if(temp>10 && temp<=20 && humidity<=30 && humidity>=0){
+            $('#imgw').attr("src","gif/1y.gif");    
+        }else if(temp>20 && temp<=30 && humidity<=30 && humidity>=0){
+            $('#imgw').attr("src","gif/1o.gif");
+        }else if(temp>30 && humidity<=30 && humidity>=0){
+            $('#imgw').attr("src","gif/1r.gif"); 
+        }else if(temp<=0 && humidity<=60 && humidity>30){
+            $('#imgw').attr("src","gif/2b.gif"); 
+        }else if(temp>0 && temp<=10 && humidity<=60 && humidity>30){
+            $('#imgw').attr("src","gif/2t.gif");   
+        }else if(temp>10 && temp<=20 && humidity<=60 && humidity>30){
+            $('#imgw').attr("src","gif/2y.gif"); 
+        }else if(temp>20 && temp<=30 && humidity<=60 && humidity>30){
+            $('#imgw').attr("src","gif/2o.gif");
+        }else if(temp>30 && humidity<=60 && humidity>30){
+            $('#imgw').attr("src","gif/2r.gif");
+        }else if(temp<=0 && humidity<=85 && humidity>60){
+            $('#imgw').attr("src","gif/3b.gif");
+        }else if(temp>0 && temp<=10 && humidity<=85 && humidity>60){
+            $('#imgw').attr("src","gif/3t.gif");
+        }else if(temp>10 && temp<=20 && humidity<=85 && humidity>60){
+            $('#imgw').attr("src","gif/3y.gif");
+        }else if(temp>20 && temp<=30 && humidity<=85 && humidity>60){
+            $('#imgw').attr("src","gif/3o.gif");
+        }else if(temp>30 && humidity<=85 && humidity>60){
+            $('#imgw').attr("src","gif/3r.gif");
+        }else if(temp<=0 && humidity<=100 && humidity>85){
+            $('#imgw').attr("src","gif/4b.gif");
+        }else if(temp>0 && temp<=10 && humidity<=100 && humidity>85){
+            $('#imgw').attr("src","gif/4t.gif");
+        }else if(temp>10 && temp<=20 && humidity<=100 && humidity>85){
+            $('#imgw').attr("src","gif/4y.gif");
+        }else if(temp>20 && temp<=30 && humidity<=100 && humidity>85){
+            $('#imgw').attr("src","gif/4o.gif");
+        }else if(temp>30 && humidity<=100 && humidity>85){
+            $('#imgw').attr("src","gif/4r.gif");
         }
 
         //END OF MYWEATHERINTERPRETATION FUNCTION
