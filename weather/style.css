@@ -1,9 +1,9 @@
 
-@import url("https://use.typekit.net/ljd8xcw.css");
+@import url("https://use.typekit.net/maj5ekd.css");
 
 .HK{
-	font-family:futura-pt, sans-serif;
-	font-size:40px;
+	font-family:covik-sans, sans-serif;
+	font-size:30px;
 	position:absolute;
 	z-index: 1;
 	text-align:left;
@@ -13,7 +13,7 @@
 	padding-left:10px;
 }
 .p1{
-	font-family:futura-pt, sans-serif;
+	font-family:covik-sans, sans-serif;
  text-align: left;
  display:block;
  font-size: 25px;
@@ -25,8 +25,8 @@
  margin-left: 200px;*/
 }
 .NY{
-	font-family:futura-pt, sans-serif;
-	font-size:40px;
+	font-family:covik-sans, sans-serif;
+	font-size:30px;
 	position:absolute;
 	z-index: 1;
 	display:flex;
@@ -36,11 +36,11 @@
 }
 }
 .p2{
-	font-family:futura-pt, sans-serif;
- text-align: left;
- display:block;
- font-size: 25px;
- line-height: 40px;
+	font-family:covik-sans, sans-serif;
+ 	text-align: left;
+ 	display:block;
+ 	font-size: 25px;
+ 	line-height: 40px;
  /*margin: 0 auto;
  width: 320px;
  margin-top: 280px;
@@ -49,18 +49,18 @@
 
 }
 .A{
-	font-family:futura-pt, sans-serif;
-	font-size:40px;
+	font-family:covik-sans, sans-serif;
+	font-size:30px;
 	position:absolute;
 	z-index: 1;
 	display:flex;
 	width:50vw;
-	height:50vh;
+	height:94vh;
 	padding-right:20px;
 }
 }
 .p3{
-	font-family:futura-pt, sans-serif;
+	font-family:covik-sans, sans-serif;
  	text-align: left;
  	display:block;
  	font-size: 25px;
@@ -73,8 +73,8 @@
  	left: 800px;*/
 }
 .R{
-	font-family:futura-pt, sans-serif;
-	font-size:40px;
+	font-family:covik-sans, sans-serif;
+	font-size:30px;
 	cursor: pointer;
 	position:absolute;
 	z-index: 1;
@@ -83,7 +83,7 @@
 }
 
 .p4{
-	font-family:futura-pt, sans-serif;
+	font-family:covik-sans, sans-serif;
  	text-align: left;
  	display:block;
  	font-size: 25px;
@@ -124,9 +124,6 @@
 	position:absolute;
 	margin-top:0px;
 	margin-left:0px;
-	width:10vh auto;
-	height: 10vh auto;
-	z-index:-4;
 }
 .n{
 	position:absolute;
@@ -134,7 +131,6 @@
 	margin-left:0px;
 	width:10vh auto;
 	height: 10vh auto;
-	z-index:-2;
 }
 .al{
 	position:absolute;
@@ -142,7 +138,6 @@
 	margin-left:0px;
 	width:10vh auto;
 	height: 10vh auto;
-	z-index:-2;
 }
 .w{
 	position:absolute;
@@ -150,7 +145,36 @@
 	margin-left:0px;
 	width:10vh auto;
 	height: 10vh auto;
-	z-index:-2;
+}
+#imgh{
+	position:absolute;
+	left:-100px;
+	top:-300px;
+	size:200%;
+	z-index: -2;
+}
+#imgn{
+	position:absolute;
+	left:-100px;
+	top:-580px;
+	size:200%;
+	z-index: -3;
+	transform: rotate(150deg);
+}
+#imga{
+	position:absolute;
+	left:-200px;
+	top:-250px;
+	size:200%;
+	z-index: -2;
+	transform: rotate(20deg);
+}
+#imgw{
+	position:absolute;
+	left:-300px;
+	top:-700px;
+	size:200%;
+	z-index: -2;
 }
 
 
@@ -165,7 +189,7 @@
 	background-position: center;
 	width: 2000px;
 	height: 2000px;
-	z-index: -1;
+	z-index: 2;
 }
 
 .pattern-container {
@@ -205,22 +229,22 @@
 
 .pattern-box ~ .hk {
 	background-image: url("image/2rc.png")!important;
-	z-index: 0;
+	z-index: 2;
 }
 
 .pattern-box ~ .ny {
 	background-image: url("image/1bm.png")!important;
-	z-index: 0;
+	z-index: 2;
 }
 
 .pattern-box ~ .a {
 	background-image: url("image/4ym.png")!important;
-	z-index: 0;
+	z-index: 2;
 }
 
 .pattern-box ~ .r {
 	background-image: url("image/4tc.png")!important;
-	z-index: 0;
+	z-index: 2;
 }
 
 
