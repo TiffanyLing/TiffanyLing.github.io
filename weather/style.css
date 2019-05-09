@@ -132,7 +132,7 @@
 .tooltip:hover .tooltiptext2 {
   visibility: visible;
   bottom: 50px;
-  left: 10px;
+  left: 15px;
 }
 
 
@@ -151,7 +151,7 @@
 .tooltip:hover .tooltiptext3 {
   visibility: visible;
   top: 50px;
-  right: 10px;
+  right: 20px;
 }
 
 .tooltip .tooltiptext4 {
@@ -202,31 +202,31 @@
 }
 #imgh{
 	position:absolute;
-	left:-100px;
-	top:-300px;
-	size:200%;
-	z-index: -2;
+	left:-10vw;
+	top:-20vw;
+	height:auto;
+	z-index:-3;
 }
 #imgn{
 	position:absolute;
-	left:-100px;
-	top:-580px;
+	left:-15vw;
+	top:-40vw;
 	size:200%;
 	z-index: -3;
 	transform: rotate(150deg);
 }
 #imga{
 	position:absolute;
-	left:-200px;
-	top:-250px;
+	left:0vw;
+	top:-15vw;
 	size:200%;
 	z-index: -2;
 	transform: rotate(20deg);
 }
 #imgw{
 	position:absolute;
-	left:-300px;
-	top:-700px;
+	left:-20vw;
+	top:-50vw;
 	size:200%;
 	z-index: -2;
 }
@@ -282,24 +282,38 @@
 }
 
 .pattern-box ~ .hk {
-	background-image: url("image/2rc.png")!important;
+	background-image: url("gif/4r.gif")!important;
 	z-index: 2;
 }
 
 .pattern-box ~ .ny {
-	background-image: url("image/1bm.png")!important;
+	background-image: url("gif/2y.gif")!important;
 	z-index: 2;
 }
 
 .pattern-box ~ .a {
-	background-image: url("image/4ym.png")!important;
+	background-image: url("gif/4t.gif")!important;
 	z-index: 2;
 }
 
 .pattern-box ~ .r {
-	background-image: url("image/4tc.png")!important;
+	background-image: url("gif/1r.gif")!important;
 	z-index: 2;
 }
+
+/*button*/
+.in{
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:60%;
+}
+
+
+
 
 
 
