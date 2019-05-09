@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-  			$("button").click(function(){
-  				$("button").hide();
-  					$("div").show();
-		});
-	</script>
 	<meta charset="utif-8">
 	<title>Piggy bouncing face</title>
 <style>
@@ -25,7 +17,7 @@
 	-webkit-transition: -webkit-transform.4s ease-in-out;
 			transition: transform.4s ease-in-out;
 }
-button:hover{
+div:hover{
 	background-color: transparent;
 	-webkit-transform: rotate(360deg);
 			transform: rotate(360deg);
@@ -34,27 +26,59 @@ button:hover{
 	from {background-position-x: 0px;}
 	to {background-position-x:-5232px;}
 }
-.image{
-	margin-left:300px;
-	margin-top:200px;
-	height:20px;
+.pig{
+	margin:50px;
+	position:relative;
 }
+
+.angry{
+	position: absolute;
+	left: 25%;
+	width: 200px;
+	display: none;
+}
+
 </style>
 </head>
 <body>
-	<button class="animation"></button>
-	<div class="image"><img src="image/angry.png"></img>	
+		<div class="animation"></div>
+		<img class="angry" src="image/angry.png">		
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script>
-
 var seconds = document.getElementById('container');
   seconds.setAttribute("style", "position:fixed; top: 200px;");
+</script>
 
-	</script>
+<script>
+$(document).ready(function(){
+  	// $("#link1").click(function(){
+   //  $("object").toggle();
+   //  $("#link1").toggle();
+   //  $("#switch1").hide();
+   //  $("#link2").toggle();
+   //  $("#switch2").show();
+
+    $(".animation").click(function() {
+	// var $dot = $("<div></div>");
+	// $dot.addClass("star");
+	// $dot.css("position", "absolute");
+	// $dot.css("top", event.pageY + "px");
+	// $dot.css("left", event.pageX + "px");
+	// $dot.appendTo("body");
+		var random_top = Math.floor(Math.random() * 300);
+		console.log(random_top);
+		$('.angry').css("top", random_top + "px");
+		$('.angry').css("width", random_top + "px");
+		$('.angry').show();
+	});
+ });
+</script>
+
 </body>
 </html>
 
-
+<!-- $('#imgh').attr("src","gif/3t.gif"); -->
 
 
 

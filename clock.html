@@ -29,21 +29,20 @@ body {
 .blue{
     background-color: blue;
 }
-.pink{
-    background-color: pink;
+.pink{z pink;
 }
 </style>
 <body>
 <div id="MyClockDisplay" class="clock"></div>
 </body>
 <script>
-	function showTime(){
+function showTime(){
     var date = new Date();
     var h = date.getHours(); // 0 - 23
     var m = date.getMinutes(); // 0 - 59
     var s = date.getSeconds(); // 0 - 59
     var session = "AM";
-    m   
+       
     if(h == 0){
         h = 12;
     }
@@ -67,14 +66,22 @@ body {
     // setInterval(functionName, 33) <- loop forever
     // setTimeout(functionName, times) <- loop in certain times
 
-    var r = parseInt(s) * 2;
-    var g = parseInt(s) * 4;
-    var b = parseInt(s) * 6;
+    // var r = parseInt(s) * 2;
+    // var g = parseInt(s) * 4;
+    // var b = parseInt(s) * 6;
+    // document.body.style.backgroundColor = 
+    // 'rgb(' + r + ',' + g + ',' + b + ')';
+    if(s<30){
+        document.body.style.backgroundColor = "red"; // "#333333", "rgb(233,33,22)" 
+        document.body.style.backgroundImage = "url('3.png')";
+    } else {
+        document.body.style.backgroundColor = "blue";
+    }
+
     document.body.style.backgroundColor = 
     'rgb(' + r + ',' + g + ',' + b + ')';
          
-    
-}
+    }
 showTime();
 </script>
 </html>

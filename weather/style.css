@@ -1,8 +1,8 @@
 
-@import url("https://use.typekit.net/maj5ekd.css");
+ @import url("https://use.typekit.net/maj5ekd.css");
 
 .HK{
-	font-family:covik-sans, sans-serif;
+	font-family:voltage, sans-serif;
 	font-size:30px;
 	position:absolute;
 	z-index: 1;
@@ -25,7 +25,7 @@
  margin-left: 200px;*/
 }
 .NY{
-	font-family:covik-sans, sans-serif;
+	font-family:voltage, sans-serif;
 	font-size:30px;
 	position:absolute;
 	z-index: 1;
@@ -33,7 +33,6 @@
 	width:50vw;
 	height:50vh;
 	padding-left:10px;
-}
 }
 .p2{
 	font-family:covik-sans, sans-serif;
@@ -49,7 +48,7 @@
 
 }
 .A{
-	font-family:covik-sans, sans-serif;
+	font-family:voltage, sans-serif;
 	font-size:30px;
 	position:absolute;
 	z-index: 1;
@@ -57,7 +56,6 @@
 	width:50vw;
 	height:94vh;
 	padding-right:20px;
-}
 }
 .p3{
 	font-family:covik-sans, sans-serif;
@@ -73,7 +71,7 @@
  	left: 800px;*/
 }
 .R{
-	font-family:covik-sans, sans-serif;
+	font-family:voltage, sans-serif;
 	font-size:30px;
 	cursor: pointer;
 	position:absolute;
@@ -113,12 +111,68 @@
   padding: 10px 0;
   /* Position the tooltip */
   position: absolute;
-  z-index: 1;
+  z-index: 10;
 }
-
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.tooltip .tooltiptext2 {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+}
+.tooltip:hover .tooltiptext2 {
+  visibility: visible;
+  bottom: 50px;
+  left: 10px;
+}
+
+
+.tooltip .tooltiptext3 {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+}
+.tooltip:hover .tooltiptext3 {
+  visibility: visible;
+  top: 50px;
+  right: 10px;
+}
+
+.tooltip .tooltiptext4 {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+}
+.tooltip:hover .tooltiptext4 {
+  visibility: visible;
+  bottom: 50px;
+  right: 10px;
+}
+
+
 /* images */
 .h{
 	position:absolute;
