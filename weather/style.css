@@ -1,6 +1,13 @@
 
  @import url("https://use.typekit.net/maj5ekd.css");
 
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 .HK{
 	font-family:voltage, sans-serif;
 	font-size:30px;
@@ -113,9 +120,9 @@
   position: absolute;
   z-index: 10;
 }
-.tooltip:hover .tooltiptext {
+/*.tooltip:hover .tooltiptext {
   visibility: visible;
-}
+}*/
 
 .tooltip .tooltiptext2 {
   visibility: hidden;
@@ -126,14 +133,16 @@
   border-radius: 6px;
   padding: 10px 0;
   /* Position the tooltip */
-  position: absolute;
+  position: fixed;
   z-index: 10;
-}
-.tooltip:hover .tooltiptext2 {
-  visibility: visible;
   bottom: 50px;
-  left: 15px;
+  left: 10px;
+  transition: visibility .25s ease-in;
 }
+
+/*.tooltip:hover .tooltiptext2 {
+  visibility: visible!important;
+}*/
 
 
 .tooltip .tooltiptext3 {
@@ -148,11 +157,11 @@
   position: absolute;
   z-index: 10;
 }
-.tooltip:hover .tooltiptext3 {
+/*.tooltip:hover .tooltiptext3 {
   visibility: visible;
   top: 50px;
   right: 20px;
-}
+}*/
 
 .tooltip .tooltiptext4 {
   visibility: hidden;
@@ -166,11 +175,11 @@
   position: absolute;
   z-index: 10;
 }
-.tooltip:hover .tooltiptext4 {
+/*.tooltip:hover .tooltiptext4 {
   visibility: visible;
   bottom: 50px;
   right: 10px;
-}
+}*/
 
 
 /* images */
@@ -178,6 +187,7 @@
 	position:absolute;
 	margin-top:0px;
 	margin-left:0px;
+	pointer-events: none;
 }
 .n{
 	position:absolute;
@@ -185,6 +195,7 @@
 	margin-left:0px;
 	width:10vh auto;
 	height: 10vh auto;
+	pointer-events: none;
 }
 .al{
 	position:absolute;
@@ -192,6 +203,7 @@
 	margin-left:0px;
 	width:10vh auto;
 	height: 10vh auto;
+	pointer-events: none;
 }
 .w{
 	position:absolute;
@@ -199,6 +211,7 @@
 	margin-left:0px;
 	width:10vh auto;
 	height: 10vh auto;
+	pointer-events: none;
 }
 #imgh{
 	position:absolute;
@@ -206,29 +219,38 @@
 	top:-20vw;
 	height:auto;
 	z-index:-3;
+	pointer-events: none;
+	width: 180%;
+	height: auto;
 }
 #imgn{
 	position:absolute;
-	left:-15vw;
-	top:-40vw;
-	size:200%;
+	left:-50vw;
+	top:20vw;
 	z-index: -3;
 	transform: rotate(150deg);
+	pointer-events: none;
+	width: 120%;
+	height: auto;
 }
 #imga{
 	position:absolute;
 	left:0vw;
-	top:-15vw;
-	size:200%;
-	z-index: -2;
+	top:-70vw;
+	z-index: -3;
 	transform: rotate(20deg);
+	pointer-events: none;
+	width: 180%;
+	height: auto;
 }
 #imgw{
 	position:absolute;
 	left:-20vw;
-	top:-50vw;
-	size:200%;
-	z-index: -2;
+	top:-30vw;
+	z-index: -3;
+	pointer-events: none;
+	width: 120%;
+	height: auto;
 }
 
 
@@ -252,7 +274,7 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: -1;
+	z-index: 0;
 	/* background-color:blue;*/
 }
 .containera{
@@ -275,10 +297,11 @@
 	left: 0;
 	width: 150px;
 	height: 100px;
-	background-image: url("gif/3t.gif");
+	/*background-image: url("gif/3t.gif");*/
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	z-index: 999999;
 }
 
 .pattern-box ~ .hk {
@@ -303,15 +326,78 @@
 
 /*button*/
 .in{
-	align-content: center;
-	align-items: center;
-	justify-content: center;
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
 	width:60%;
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
+.unhover {
+	visibility: visible;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.hover {
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.in:hover .unhover {
+	visibility: hidden;
+}
+
+.in:hover .hover {
+	visibility: visible;
+}
+
+.hongkong {
+	font-family:voltage, sans-serif;
+	font-size:30px;
+	position: fixed;
+	width: 100px;
+	height: 100px;
+	left: 0;
+	top: 0;
+	padding: 25px;
+	z-index: 20;
+}
+
+.auckland {
+	font-family:voltage, sans-serif;
+	font-size:30px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: 25px;
+	z-index: 20;
+}
+
+.newyork {
+	font-family:voltage, sans-serif;
+	font-size:30px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	padding: 25px;
+	z-index: 20;
+}
+
+.wadihalfa {
+	font-family:voltage, sans-serif;
+	font-size:30px;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	padding: 25px;
+	z-index: 20;
+}
 
 
 

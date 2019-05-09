@@ -12,63 +12,71 @@ $(document).ready(function(){
     var hkWeather, nyWeather, auWeather, waWeather;
 
     // tutor add
-    $(".text1").hover(function(){
-        $(".tooltiptext").css("visibility","visible");
-        }, function(){
-            $(".tooltiptext").css("visibility","hidden");
-            // console.log("here");
-    });
-    $(".text2").hover(function(){
-        $(".tooltiptext2").css("visibility","visible");
-        }, function(){
-            $(".tooltiptext2").css("visibility","hidden");
-            // console.log("here2");
-    });    
-    $(".text3").hover(function(){
-        $(".tooltiptext3").css("visibility","visible");
-        }, function(){
-            $(".tooltiptext3").css("visibility","hidden");
-            // console.log("here2");
-    });
-    $(".text4").hover(function(){
-        $(".tooltiptext4").css("visibility","visible");
-        }, function(){
-            $(".tooltiptext4").css("visibility","hidden");
-            console.log("here2");
-    });
+    // $(".text1").hover(function(){
+    //     $(".tooltiptext").css("visibility","visible");
+    //     }, function(){
+    //         $(".tooltiptext").css("visibility","hidden");
+    //         // console.log("here");
+    // });
+    // $(".text2").hover(function(){
+    //     $(".tooltiptext2").css("visibility","visible");
+    //     }, function(){
+    //         $(".tooltiptext2").css("visibility","hidden");
+    //         console.log("here2");
+    // });
 
-    $(".HK").click(function() {
+    // $('.text2').on("hover", ".tooltiptext2", function() {
+    //     $(this).css("visibility", "visible");
+    // }, function() {
+    //     $(this).css("visibility", "hidden");
+    // });
+
+    // $(".text3").hover(function(){
+    //     $(".tooltiptext3").css("visibility","visible");
+    //     }, function(){
+    //         $(".tooltiptext3").css("visibility","hidden");
+    //         // console.log("here2");
+    // });
+    // $(".text4").hover(function(){
+    //     $(".tooltiptext4").css("visibility","visible");
+    //     }, function(){
+    //         $(".tooltiptext4").css("visibility","hidden");
+    //         // console.log("here2");
+    // });
+
+    $(".hongkong").click(function() {
         hCheck = true;
         nCheck = false, aCheck = false, wCheck = false;
         console.log("hCheck true");
     });
 
-    $(".NY").click(function() {
+    $(".newyork").click(function() {
         nCheck = true;
         hCheck = false, aCheck = false, wCheck = false;
         console.log("nCheck true");
     });
 
-    $(".A").click(function() {
+    $(".auckland").click(function() {
         aCheck = true;
         hCheck = false, nCheck = false, wCheck = false;
         console.log("aCheck true");
     });
 
-    $(".R").click(function() {
+    $(".wadihalfa").click(function() {
         wCheck = true;
         hCheck = false, aCheck = false, nCheck = false;
         console.log("wCheck true");
     });
 
     $(".pattern-container").click(function(e) {
+
+        console.log("container clicked");
+
         if(hCheck == true) {
             var offset = $(this).offset();
             var x = e.clientX - (offset.left + 75);
             var y = e.clientY - (offset.top + 40);
             
-
-
             $(".pattern-container").append('<div class=\"pattern-box hk\" style=\"left:'+x+'px; top:'+y+'px;\"></div>');
 
             console.log("box appended");
@@ -127,9 +135,11 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
             
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p1').append('Temperature: ' + temp + " " + '°C' + '</br>');
-        $('.p1').append('Humidity: ' + humidity + " " + '%' + '</br>');
-        $('.p1').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+        // $('.p1').append('Temperature: ' + temp + " " + '°C' + '</br>');
+        // $('.p1').append('Humidity: ' + humidity + " " + '%' + '</br>');
+        // $('.p1').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+
+        $('.hongkong span').attr('data-balloon', 'Temperature: ' + temp + " " + '°C \n' + ' Humidity: ' + humidity + "" + '% ' + ' Visibility: ' + visibility + " " + 'm' + '');
             
         if(visibility>10000 && temp<=0 && humidity<=30 && humidity>=0){
             waWeather = "1b";
@@ -197,9 +207,11 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
             
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p2').append('Temperature: ' + temp + " " + '°C' + '</br>');
-        $('.p2').append('Humidity: ' + humidity + " " + '%' + '</br>');
-        $('.p2').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+        // $('.p2').append('Temperature: ' + temp + " " + '°C' + '</br>');
+        // $('.p2').append('Humidity: ' + humidity + " " + '%' + '</br>');
+        // $('.p2').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+
+        $('.newyork span').attr('data-balloon', 'Temperature: ' + temp + " " + '°C \n' + ' Humidity: ' + humidity + "" + '% ' + ' Visibility: ' + visibility + " " + 'm' + '');
             
         if(visibility>10000 && temp<=0 && humidity<=30 && humidity>=0){
             waWeather = "1bc";
@@ -265,9 +277,11 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
             
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p3').append('Temperature: ' + temp + " " + '°C' +'</br>');
-        $('.p3').append('Humidity: ' + humidity + " " + '%' + '</br>');
-        $('.p3').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+        // $('.p3').append('Temperature: ' + temp + " " + '°C' +'</br>');
+        // $('.p3').append('Humidity: ' + humidity + " " + '%' + '</br>');
+        // $('.p3').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+
+        $('.auckland span').attr('data-balloon', 'Temperature: ' + temp + " " + '°C \n' + ' Humidity: ' + humidity + "" + '% ' + ' Visibility: ' + visibility + " " + 'm' + '');
 
         if(visibility>10000 && temp<=0 && humidity<=30 && humidity>=0){
             waWeather = "1bc";
@@ -334,9 +348,11 @@ $(document).ready(function(){
     function myWeatherInterpretation(){
             
         //JUST SEEING IF THE VALUES COME THROUGH
-        $('.p4').append('Temperature: ' + temp + " " + '°C' + '</br>');
-        $('.p4').append('Humidity: ' + humidity + " " + '%' + '</br>');
-        $('.p4').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+        // $('.p4').append('Temperature: ' + temp + " " + '°C' + '</br>');
+        // $('.p4').append('Humidity: ' + humidity + " " + '%' + '</br>');
+        // $('.p4').append('Visibility: ' + visibility + " " + 'm' + '</br>');
+
+        $('.wadihalfa span').attr('data-balloon', 'Temperature: ' + temp + " " + '°C \n' + ' Humidity: ' + humidity + "" + '% ' + ' Visibility: ' + visibility + " " + 'm' + '');
 
         if(visibility>10000 && temp<=0 && humidity<=30 && humidity>=0){
             waWeather = "1bc";
