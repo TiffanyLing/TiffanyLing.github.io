@@ -216,7 +216,7 @@ html, body {
 #imgh{
 	position:absolute;
 	left:-10vw;
-	top:-20vw;
+	top:-50vw;
 	height:auto;
 	z-index:-3;
 	pointer-events: none;
