@@ -245,8 +245,8 @@ html, body {
 }
 #imgw{
 	position:absolute;
-	left:-20vw;
-	top:-30vw;
+	left:-50vw;
+	top:-40vw;
 	z-index: -3;
 	pointer-events: none;
 	width: 120%;
