@@ -122,7 +122,7 @@ $(document).ready(function(){
 
 /* HK */
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=1819730&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=1819730&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             temp = results.main.temp;
@@ -193,7 +193,7 @@ $(document).ready(function(){
 /* NY */
 $(document).ready(function(){
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=5128581&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=5128581&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             temp = results.main.temp;
@@ -263,7 +263,7 @@ $(document).ready(function(){
 /* Auckland */
 $(document).ready(function(){
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=2193732&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=2193732&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             temp = results.main.temp;
@@ -334,7 +334,7 @@ $(document).ready(function(){
 /* Wādī Ḩalfā */
 $(document).ready(function(){
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?id=364132&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
+        url: 'https://api.openweathermap.org/data/2.5/weather?id=364132&units=metric&APPID=adb5f4376eebe744a35c9034c0ee2764', //CHANGE THE URL TO YOUR API QUERY
         dataType: 'jsonp',
         success: function(results){
             temp = results.main.temp;
