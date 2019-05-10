@@ -109,10 +109,8 @@ $(document).ready(function(){
             var offset = $(this).offset();
             var x = e.clientX - (offset.left + 75);
             var y = e.clientY - (offset.top + 40);
-            
-            if(waWeather == "raining"){
-                $(".pattern-container").append('<div class=\"pattern-box 1bc\" style=\"left:'+x+'px; top:'+y+'px;\"></div>');
-            }
+                        
+            $(".pattern-container").append('<div class=\"pattern-box r\" style=\"left:'+x+'px; top:'+y+'px;\"></div>');
 
             //$(".pattern-container").append('<div class=\"pattern-box r\" style=\"left:'+x+'px; top:'+y+'px;\"></div>');
 
